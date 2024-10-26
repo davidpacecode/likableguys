@@ -1,0 +1,11 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.metadata.myvariable }}.
+
+title: Likable Guys
+tagline: We're generally pleasant and mostly inoffensive...
+email: contact_email_coming_soon@likableguys.com
+description: >-
+  This is a site about things pertaining to two particularly likable guys. There'll be swimming information, fitness stuff, gaming information including some web games and, eventually, more. Now, "eventually" may mean "never," but I hope not. 

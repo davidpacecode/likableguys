@@ -1,0 +1,21 @@
+---<%
+
+  require 'set'
+
+  # route: /swimgrade
+
+  r.get do
+
+    render_with do
+      layout :page
+      title ""
+    end
+
+
+  end
+
+
+%>---
+
+<h1>Hello, world!</h1>
+

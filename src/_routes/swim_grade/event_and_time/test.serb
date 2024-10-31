@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title || "Default Title" }}</title>
+  <style>
+    {% css %}
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+    {% endcss %}
+  </style>
+</head>
+<body>
+  {%- if user.logged_in %}
+    <h1>Welcome back, {{ user.name.capitalize }}!</h1>
+  {% else %}
+    <h1>Hello, Guest!</h1>
+  {% end %}
+
+  <nav>
+    {%- for item in navigation %}
+      <a href="{{ item.url }}" class="{{ item.current? ? 'active' : '' }}">
+        {{ item.label }}
+      </a>
+    {%- end %}
+  </nav>
+
+  <div class="posts">
+    {%- @posts.each do |post| %}
+      <article>
+        <h2>{{ post.title }}</h2>
+        <time>{{ post.date.strftime("%B %d, %Y") }}</time>
+        <div class="content">
+          {{ post.content | markdown }}
+        </div>
+        {%- if post.tags.any? %}
+          <div class="tags">
+            {%- for tag in post.tags %}
+              <span class="tag">{{ t

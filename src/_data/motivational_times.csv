@@ -1,4 +1,4 @@
-type,age,distance,stroke,event,course,gender,aaaa,aaa,aa,a,bb,b
+age_type,age,distance,stroke,event_type,gender,aaaa,aaa,aa,a,bb,b
 single_age,12,50,fr,scy,girls,34.09,31.69,29.39,28.19,26.99,25.79
 single_age,12,100,fr,scy,girls,1:14.69,1:09.39,1:04.09,1:01.39,58.69,56.09
 single_age,12,200,fr,scy,girls,2:43.39,2:31.69,2:19.99,2:14.19,2:08.39,2:02.49

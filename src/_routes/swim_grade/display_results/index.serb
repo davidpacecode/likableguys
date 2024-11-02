@@ -1,6 +1,30 @@
 ---<%
 
 # route: /swimgrade
+def get_motivational_times (age, gender, age_type, distance, stroke, event_type)
+
+  member = site.data.motivational_times.find do |m|
+    m.age == age &&
+    m.gender == gender &&
+    m.age_type == age_type &&
+    m.distance == distance &&
+    m.stroke == stroke &&
+    m.event_type == event_type
+  end
+
+  member ? [member.aaaa, member.aaa, member.aa, member.a, member.bb, member.b] : nil
+
+end
+
+def convert_to_seconds (time)
+
+  if time.include? ":"
+    mins,secs = time.split(":")
+    time = mins.to_f * 60 + secs.to_f
+  else
+    time.to_f
+  end
+end
 
 r.get do
     
@@ -10,23 +34,38 @@ r.get do
   distance, stroke, event_type = r.params["race"].downcase.split("_")
   time = r.params["time"]
 
-site.data.motivational_times.each do |member|
-  if member.age == age &&
-     member.gender == gender &&
-     member.age_type == age_type &&
-     member.distance == distance &&
-     member.stroke == stroke &&
-     member.event_type == event_type
 
-      aaaa,aaa,aa,a,bb,b = member.aaaa,member.aaa,member.aa,member.a,member.bb,member.b
+
+  times = get_motivational_times(age, gender, age_type, distance, stroke, event_type)
+
+  AAAA = convert_to_seconds(times[0])
+  AAA = convert_to_seconds(times[1])
+  AA = convert_to_seconds(times[2])
+  A = convert_to_seconds(times[3])
+  BB = convert_to_seconds(times[4])
+  B = convert_to_seconds(times[5])
+
+  case convert_to_seconds(time)
+  when 0..AAAA
+    grade = "AAAA"
+  when AAAA..AAA
+    grade = "AAA"
+  when AAA..AA
+    grade = "AA"
+  when AA..A
+    grade = "A"
+  when A..BB
+    grade = "BB"
+  when BB..B
+    grade = "B"
+  else
+    grade = "C"
   end
-end
 
   render_with do
-      layout :page
-      title ""
+    layout :page
+    title ""
   end
-
 
 end
 
@@ -40,48 +79,17 @@ end
 <b>Distance:</b> {%=distance%} <br />
 <b>Stroke:</b> {%=stroke%} <br />
 <b>Time:</b> {%=time%} <br />
-<b>AAAA:</b> {%=aaaa%} <br />
-<b>AAA:</b> {%=aaa%} <br />
-<b>AA:</b> {%=aa%} <br />
-<b>A:</b> {%=a%} <br />
-<b>BB:</b> {%=bb%} <br />
-<b>B:</b> {%=b%} <br />
+<b>AAAA:</b> {%=times[0]%} <br />
+<b>AAA:</b> {%=times[1]%} <br />
+<b>AA:</b> {%=times[2]%} <br />
+<b>A:</b> {%=times[3]%} <br />
+<b>BB:</b> {%=times[4]%} <br />
+<b>B:</b> {%=times[5]%} <br />
+
+<p>
+
+<sl-badge variant="primary" pill pulse>{%=grade%}</sl-badge>
 
 
 
-<form class="input-validation-required" action="/swim_grade/display_results" method="get">
-
-  <sl-select label="Please select the event" value="" required>
-    {% for member in site.data.motivational_times %}
-      {% if member.age == age && member.gender == gender && member.event_type == event_type && member.age_type == age_type %}
-        <sl-option name="race" value="{%=member.distance.upcase%} {%=member.stroke.upcase%} {%=member.event_type%}">{%=member.distance.upcase%} {%=member.stroke.upcase%} {%=member.event_type.upcase%}</sl-option>
-      {% end %}
-    {% end %}
-  </sl-select>
-  <br />
- 
-  <sl-input name="time" label="Time (e.g. 13.14 for 13.14 seconds, 3:14.15 for 3 minutes and 14.15 seconds)" required></sl-input>
-  <br />
-
-   <sl-button type="submit" variant="primary">Compute the grade</sl-button>
-</form>
-
-<script type="module">
-  const form = document.querySelector('.input-validation-required');
-
-  // Wait for controls to be defined before attaching form listeners
-  await Promise.all([
-    customElements.whenDefined('sl-button'),
-    customElements.whenDefined('sl-checkbox'),
-    customElements.whenDefined('sl-input'),
-    customElements.whenDefined('sl-option'),
-    customElements.whenDefined('sl-select'),
-    customElements.whenDefined('sl-textarea')
-  ]).then(() => {
-    form.addEventListener('submit', event => {
-      event.preventDefault();
-      alert('All fields are valid!');
-    });
-  });
-</script>
 

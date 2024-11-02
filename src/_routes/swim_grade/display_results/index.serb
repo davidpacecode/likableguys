@@ -9,6 +9,8 @@
     gender = r.params["gender"]
     event_type = r.params["event_type"]
     age_type = r.params["age_type"]
+    race = r.params["race"].gsub("_"," ")
+    time = r.params["time"]
 
     render_with do
       layout :page
@@ -21,16 +23,21 @@
 
 %>---
 
-Please choose the following for your <b>{%=age%} year old</b> and I'll compute the USA Swimming Motivational grade using the <b>{%=age_type%} charts</b> for <b>{%=gender%}.</b>
-<p>
+<b>Age:</b> {%=age%} <br />
+<b>Gender:</b> {%=gender%} <br />
+<b>Event Type:</b> {%=event_type%} <br />
+<b>Age Type:</b> {%=age_type%} <br />
+<b>Race:</b> {%=race%} <br />
+<b>Time:</b> {%=time%} <br />
+
 
 
 <form class="input-validation-required" action="/swim_grade/display_results" method="get">
 
-  <sl-select label="Please select the event" required>
+  <sl-select label="Please select the event" value="" required>
     {% for member in site.data.motivational_times %}
       {% if member.age == age && member.gender == gender && member.event_type == event_type && member.age_type == age_type %}
-        <sl-option value="12">{%=member.distance.upcase%} {%=member.stroke.upcase%} {%=member.event_type.upcase%}</sl-option>
+        <sl-option name="race" value="{%=member.distance.upcase%} {%=member.stroke.upcase%} {%=member.event_type%}">{%=member.distance.upcase%} {%=member.stroke.upcase%} {%=member.event_type.upcase%}</sl-option>
       {% end %}
     {% end %}
   </sl-select>

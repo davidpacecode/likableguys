@@ -24,20 +24,28 @@ Please choose the following for your <b>{%=age%} year old</b> and I'll compute t
 
 <form class="input-validation-required" action="/swim_grade/display_results" method="get">
 
-  <sl-select label="Please select the event" required>
+  <sl-select name="race" label="Please select the event" required>
     {% for member in site.data.motivational_times %}
       {% if member.age == age && member.gender == gender && member.event_type == event_type && member.age_type == age_type %}
-        <sl-option value="12">{%=member.distance.upcase%} {%=member.stroke.upcase%} {%=member.event_type.upcase%}</sl-option>
+        <sl-option value="{%=member.distance.upcase%} {%=member.stroke.upcase%} {%=member.event_type.upcase%}">{%=member.distance.upcase%} {%=member.stroke.upcase%} {%=member.event_type.upcase%}</sl-option>
       {% end %}
     {% end %}
   </sl-select>
   <br />
  
+  <!--- note that I think there is a bug and that times of x.yz fail to pass validation.
+  I don't think this is a big deal as there are no times less than 10 seconds -->
   <sl-input name="time" label="Please enter your swimmer's time (MM:SS:CS or SS:CS e.g. 13.14 for 13.14 seconds, 3:14.15 for 3 minutes and 14.15 seconds)" required
     pattern="^(?:(?:[0-5]?[0-9]:))?([0-5][0-9]).([0-9][0-9])$"
     placeholder="MM:SS:CC or SS:CC">
   </sl-input>
  <br />
+
+  <!--- Hidden fields to pass to next form -->
+  <input type="hidden" name="age" value="{%=age%}"></input>
+  <input type="hidden" name="gender" value="{%=gender%}"></input>
+  <input type="hidden" name="event_type" value="{%=event_type%}"></input>
+  <input type="hidden" name="age_type" value="{%=age_type%}"></input>
 
    <sl-button type="submit" variant="primary">Compute the grade</sl-button>
 </form>

@@ -1,24 +1,34 @@
 ---<%
 
+# route: /swimgrade
 
-  # route: /swimgrade
-
-  r.get do
+r.get do
     
-    age = r.params["age"]
-    gender = r.params["gender"]
-    event_type = r.params["event_type"]
-    age_type = r.params["age_type"]
-    race = r.params["race"].gsub("_"," ")
-    time = r.params["time"]
+  age = r.params["age"]
+  gender = r.params["gender"]
+  age_type = r.params["age_type"]
+  distance, stroke, event_type = r.params["race"].downcase.split("_")
+  time = r.params["time"]
 
-    render_with do
+site.data.motivational_times.each do |member|
+  if member.age == age &&
+     member.gender == gender &&
+     member.age_type == age_type &&
+     member.distance == distance &&
+     member.stroke == stroke &&
+     member.event_type == event_type
+
+      aaaa,aaa,aa,a,bb,b = member.aaaa,member.aaa,member.aa,member.a,member.bb,member.b
+  end
+end
+
+  render_with do
       layout :page
       title ""
-    end
-
-
   end
+
+
+end
 
 
 %>---
@@ -27,8 +37,15 @@
 <b>Gender:</b> {%=gender%} <br />
 <b>Event Type:</b> {%=event_type%} <br />
 <b>Age Type:</b> {%=age_type%} <br />
-<b>Race:</b> {%=race%} <br />
+<b>Distance:</b> {%=distance%} <br />
+<b>Stroke:</b> {%=stroke%} <br />
 <b>Time:</b> {%=time%} <br />
+<b>AAAA:</b> {%=aaaa%} <br />
+<b>AAA:</b> {%=aaa%} <br />
+<b>AA:</b> {%=aa%} <br />
+<b>A:</b> {%=a%} <br />
+<b>BB:</b> {%=bb%} <br />
+<b>B:</b> {%=b%} <br />
 
 
 

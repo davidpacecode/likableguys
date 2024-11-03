@@ -91,14 +91,14 @@ end
     <tbody>
         <tr>
             <td data-label="Age">{%=age%}</td>
-            <td data-label="Gender">{%=gender%}</td>
+            <td data-label="Gender">{%=gender.capitalize%}</td>
             <td data-label="Event">{%=race%}</td>
-            <td data-label="AAAA">{%=AAAA%}</td>
-            <td data-label="AAA">{%=AAA%}</td>
-            <td data-label="AA">{%=AA%}</td>
-            <td data-label="A">{%=A%}</td>
-            <td data-label="BB">{%=BB%}</td>
-            <td data-label="B">{%=B%}</td>
+            <td data-label="AAAA">{%=AAAA.round(2)%}</td>
+            <td data-label="AAA">{%=AAA.round(2)%}</td>
+            <td data-label="AA">{%=AA.round(2)%}</td>
+            <td data-label="A">{%=A.round(2)%}</td>
+            <td data-label="BB">{%=BB.round(2)%}</td>
+            <td data-label="B">{%=B.round(2)%}</td>
             <td data-label="Your Time">{%=time%}</td>
             <td data-label="Grade">{%=grade%}</td>
         </tr>
@@ -129,7 +129,7 @@ end
 
 
 <style>
-/* Base table styles */
+
 .modern-table {
     width: 100%;
     border-collapse: collapse;
@@ -138,7 +138,8 @@ end
     font-family: system-ui, -apple-system, sans-serif;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-    overflow: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 .modern-table thead tr {
@@ -164,46 +165,76 @@ end
     border-bottom: 2px solid var(--sl-color-primary-700);
 }
 
-/* Hover effect */
-.modern-table tbody tr:hover {
-    background-color: #f8f8ff;
-}
 
-/* Responsive design */
-@media screen and (max-width: 600px) {
+/* Enhanced responsive design */
+@media screen and (max-width: 767px) {
     .modern-table {
         display: block;
-        overflow-x: auto;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
     }
     
-    .modern-table thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
+    .modern-table thead {
+        display: none; /* Hide headers more simply */
+    }
+    
+    .modern-table tbody, 
+    .modern-table tr, 
+    .modern-table td {
+        display: block;
+        width: 100%;
     }
     
     .modern-table tr {
-        border: 1px solid #ddd;
-        margin-bottom: .625em;
-        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid var(--sl-color-primary-700);
+        background: #fff;
     }
     
     .modern-table td {
-        border: none;
-        position: relative;
-        padding-left: 50%;
-        display: block;
         text-align: right;
+        padding: 0.75rem;
+        border-bottom: 1px solid #eee;
+        min-height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     
-    .modern-table td:before {
+    .modern-table td:last-child {
+        border-bottom: none;
+    }
+    
+    .modern-table td::before {
         content: attr(data-label);
-        position: absolute;
-        left: 12px;
-        width: 45%;
-        padding-right: 10px;
-        text-align: left;
+        float: left;
+        font-weight: bold;
+        margin-right: 1rem;
+        position: relative;
+        padding: 0;
+        left: 0;
+        width: auto;
+    }
+    
+    /* Optional: Make certain columns more prominent */
+    .modern-table td[data-label="Grade"],
+    .modern-table td[data-label="Your Time"] {
+        background: #f8f9fa;
         font-weight: bold;
     }
+    
+    /* Fix small screen text size */
+    @media screen and (max-width: 360px) {
+        .modern-table {
+            font-size: 0.8em;
+        }
+        
+        .modern-table td {
+            padding: 0.5rem;
+        }
+    }
 }
+
 </style>

@@ -31,6 +31,7 @@ r.get do
   age = r.params["age"]
   gender = r.params["gender"]
   age_type = r.params["age_type"]
+  race = r.params["race"].gsub("_"," ")
   distance, stroke, event_type = r.params["race"].downcase.split("_")
   time = r.params["time"]
 
@@ -71,7 +72,46 @@ end
 
 
 %>---
+<table class="modern-table">
+    <thead>
+        <tr>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Event</th>
+            <th>AAAA</th>
+            <th>AAA</th>
+            <th>AA</th>
+            <th>A</th>
+            <th>BB</th>
+            <th>B</th>
+            <th>Your Time</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Age">{%=age%}</td>
+            <td data-label="Gender">{%=gender%}</td>
+            <td data-label="Event">{%=race%}</td>
+            <td data-label="AAAA">{%=AAAA%}</td>
+            <td data-label="AAA">{%=AAA%}</td>
+            <td data-label="AA">{%=AA%}</td>
+            <td data-label="A">{%=A%}</td>
+            <td data-label="BB">{%=BB%}</td>
+            <td data-label="B">{%=B%}</td>
+            <td data-label="Your Time">{%=time%}</td>
+            <td data-label="Grade">{%=grade%}</td>
+        </tr>
+   </tbody>
+</table>
 
+<p>
+
+<center>
+<sl-button size="large" variant="primary">{%=grade%}</sl-button>
+</center>
+
+<!---
 <b>Age:</b> {%=age%} <br />
 <b>Gender:</b> {%=gender%} <br />
 <b>Event Type:</b> {%=event_type%} <br />
@@ -85,11 +125,85 @@ end
 <b>A:</b> {%=times[3]%} <br />
 <b>BB:</b> {%=times[4]%} <br />
 <b>B:</b> {%=times[5]%} <br />
-
-<p>
-
-<sl-badge variant="primary" pill pulse>{%=grade%}</sl-badge>
+-->
 
 
+<style>
+/* Base table styles */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: system-ui, -apple-system, sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
 
+.modern-table thead tr {
+    background-color: var(--sl-color-primary-700);
+    color: #ffffff;
+    text-align: left;
+}
 
+.modern-table th,
+.modern-table td {
+    padding: 12px 15px;
+}
+
+.modern-table tbody tr {
+    border-bottom: 1px solid var(--sl-color-primary-700);
+}
+
+.modern-table tbody tr:nth-of-type(even) {
+    background-color: #f3f4f6;
+}
+
+.modern-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--sl-color-primary-700);
+}
+
+/* Hover effect */
+.modern-table tbody tr:hover {
+    background-color: #f8f8ff;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .modern-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .modern-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .modern-table tr {
+        border: 1px solid #ddd;
+        margin-bottom: .625em;
+        display: block;
+    }
+    
+    .modern-table td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        display: block;
+        text-align: right;
+    }
+    
+    .modern-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 12px;
+        width: 45%;
+        padding-right: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+</style>

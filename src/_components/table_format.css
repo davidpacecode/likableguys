@@ -1,0 +1,151 @@
+.badge-pulse sl-badge:not(:last-of-type) {
+    margin-right: 1rem;
+}
+
+.table-container {
+    background: #fff;
+    width: 80vw;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), 5px 5px 10px rgba(0, 0, 0, 0.01);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table .customer-info img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #ebebeb;
+}
+
+.table .customer-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.table .customer-info p {
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.table thead {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.table th,
+.table td {
+    padding: 8px 20px 5px 20px;
+    text-align: left;
+}
+
+.table th {
+    font-weight: 400;
+    font-size: 13px;
+    background: #f7f7f7;
+    color: #5f5f5f;
+}
+
+input.input-checkbox {
+    height: 18px;
+    width: 18px;
+    accent-color: #222;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.table th input.input-checkbox {
+    margin-top: 3px;
+}
+
+.table i {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.table .text-center {
+    display: flex;
+    gap: 5px;
+}
+
+.table tr td {
+    font-size: 12px;
+    color: #5f5f5f;
+}
+
+.table tr {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.table-header,
+.table-footer {
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+button {
+    outline: none;
+    border: 1px solid #dbdbdb;
+    background: none;
+    padding: 5px 6px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.02), -2px -2px 3px rgba(0, 0, 0, 0.01);
+    cursor: pointer;
+}
+
+button i {
+    font-size: 20px;
+}
+
+.action {
+    display: flex;
+    gap: 10px;
+}
+
+.table-header .headings {
+    margin-top: 5px;
+}
+
+.table-header .headings p {
+    font-size: 12px;
+    color: #5f5f5f;
+}
+
+.table-header .headings h3 {
+    font-size: 18px;
+}
+
+.status {
+    padding: 5px 15px;
+    border-radius: 15px;
+    display: flex;
+    width: fit-content;
+    font-size: 11px;
+}
+
+.status.shipped {
+    background: #197cd224;
+    color: #197cd2;
+    border: 1px solid #197cd2;
+}
+
+.status.delivered {
+    background: #19d24124;
+    color: #19d241;
+    border: 1px solid #19d241;
+}
+
+.status.pending {
+    background: #d2d21924;
+    color: #d2d238;
+    border: 1px solid #d2d219;
+}

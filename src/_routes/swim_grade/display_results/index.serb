@@ -35,8 +35,6 @@ r.get do
   distance, stroke, event_type = r.params["race"].downcase.split("_")
   time = r.params["time"]
 
-
-
   times = get_motivational_times(age, gender, age_type, distance, stroke, event_type)
 
   AAAA = convert_to_seconds(times[0])
@@ -72,44 +70,30 @@ end
 
 
 %>---
-<table class="modern-table">
+<div class="table-container">
+  <table class="table">
     <thead>
-        <tr>
-            <th>Age</th>
-            <th>Gender</th>
-            <th>Event</th>
-            <th>AAAA</th>
-            <th>AAA</th>
-            <th>AA</th>
-            <th>A</th>
-            <th>BB</th>
-            <th>B</th>
-            <th>Your Time</th>
-            <th>Grade</th>
-        </tr>
+      <tr>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Event</th>
+        <th>Time</th>
+        <th>Grade</th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <td data-label="Age">{%=age%}</td>
-            <td data-label="Gender">{%=gender.capitalize%}</td>
-            <td data-label="Event">{%=race%}</td>
-            <td data-label="AAAA">{%=AAAA.round(2)%}</td>
-            <td data-label="AAA">{%=AAA.round(2)%}</td>
-            <td data-label="AA">{%=AA.round(2)%}</td>
-            <td data-label="A">{%=A.round(2)%}</td>
-            <td data-label="BB">{%=BB.round(2)%}</td>
-            <td data-label="B">{%=B.round(2)%}</td>
-            <td data-label="Your Time">{%=time%}</td>
-            <td data-label="Grade">{%=grade%}</td>
-        </tr>
-   </tbody>
-</table>
-
-<p>
-
-<center>
-<sl-button size="large" variant="primary">{%=grade%}</sl-button>
-</center>
+      <tr>
+        <td data-label="Age">{%=age%}</td>
+        <td data-label="Gender">{%=gender.capitalize%}</td>
+        <td data-label="Event">{%=race%}</td>
+        <td data-label="Time">{%=time%}</td>
+        <div class="badge-pulse">
+          <td><sl-badge variant="primary" pill pulse>{%=grade%}</sl-badge></td>
+        </div>
+     </tr>
+    </tbody>
+  </table>
+</div>
 
 <!---
 <b>Age:</b> {%=age%} <br />
@@ -128,113 +112,4 @@ end
 -->
 
 
-<style>
 
-.modern-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: system-ui, -apple-system, sans-serif;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-}
-
-.modern-table thead tr {
-    background-color: var(--sl-color-primary-700);
-    color: #ffffff;
-    text-align: left;
-}
-
-.modern-table th,
-.modern-table td {
-    padding: 12px 15px;
-}
-
-.modern-table tbody tr {
-    border-bottom: 1px solid var(--sl-color-primary-700);
-}
-
-.modern-table tbody tr:nth-of-type(even) {
-    background-color: #f3f4f6;
-}
-
-.modern-table tbody tr:last-of-type {
-    border-bottom: 2px solid var(--sl-color-primary-700);
-}
-
-
-/* Enhanced responsive design */
-@media screen and (max-width: 767px) {
-    .modern-table {
-        display: block;
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-        box-shadow: none;
-    }
-    
-    .modern-table thead {
-        display: none; /* Hide headers more simply */
-    }
-    
-    .modern-table tbody, 
-    .modern-table tr, 
-    .modern-table td {
-        display: block;
-        width: 100%;
-    }
-    
-    .modern-table tr {
-        margin-bottom: 1rem;
-        border: 1px solid var(--sl-color-primary-700);
-        background: #fff;
-    }
-    
-    .modern-table td {
-        text-align: right;
-        padding: 0.75rem;
-        border-bottom: 1px solid #eee;
-        min-height: 2.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .modern-table td:last-child {
-        border-bottom: none;
-    }
-    
-    .modern-table td::before {
-        content: attr(data-label);
-        float: left;
-        font-weight: bold;
-        margin-right: 1rem;
-        position: relative;
-        padding: 0;
-        left: 0;
-        width: auto;
-    }
-    
-    /* Optional: Make certain columns more prominent */
-    .modern-table td[data-label="Grade"],
-    .modern-table td[data-label="Your Time"] {
-        background: #f8f9fa;
-        font-weight: bold;
-    }
-    
-    /* Fix small screen text size */
-    @media screen and (max-width: 360px) {
-        .modern-table {
-            font-size: 0.8em;
-        }
-        
-        .modern-table td {
-            padding: 0.5rem;
-        }
-    }
-}
-
-</style>

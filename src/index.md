@@ -4,7 +4,7 @@
 layout: default
 ---
 
-## Swimgrade <sup>TM</sup>
+## Swimgrade <sup>TM I am testing autodeploy and certs...</sup>
 {:style="text-align:center"}
 #### Enter the details of an athlete's performance at a race and calculate their [Motivational Time Standard Level](https://swimswam.com/usa-swimming-releases-age-group-motivational-times-for-2024-2028/)
 {:style="text-align:center"}

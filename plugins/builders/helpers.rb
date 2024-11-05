@@ -1,6 +1,11 @@
 class Builders::Helpers < SiteBuilder
   def build
     puts "Registering get_motivational_times helper..."  # Debug line
+
+    Bridgetown::Current.site.config.helper_methods ||= Set.new
+    Bridgetown::Current.site.config.helper_methods << :get_motivational_times
+
+
     helper :get_motivational_times do |age, gender, age_type, distance, stroke, event_type|
     puts "Helper called with params: #{member_params.inspect}"  # Debug line
       member = site.data.motivational_times.find do |m|

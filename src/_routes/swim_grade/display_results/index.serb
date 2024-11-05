@@ -13,7 +13,10 @@
 # end
 
 r.get do
-    
+  
+  puts "Available methods on view: #{view.methods.sort}"  # Debug line
+  puts "Helper methods: #{view.helper_methods}" if view.respond_to?(:helper_methods)  # Debug line  
+
   age = r.params["age"]
   gender = r.params["gender"]
   age_type = r.params["age_type"]

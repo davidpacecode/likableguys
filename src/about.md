@@ -8,7 +8,7 @@ Likable Guys is intended to be a general site containing information on a variet
 Eventually, I think the site structure might look something like what's below. That said, "coming soon" sections are pretty lame. So will keep pages like that to a minimum. Note that this is a page like that...
 
 - Home
-- Swimming
+- Swimming (this is coming next...)
   - Upcoming meets (secured)
   - Best times (secured)
   - Swim grade (the thing that's currently on the home page...)

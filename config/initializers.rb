@@ -103,5 +103,4 @@ Bridgetown.configure do |config|
   config.static_folders = {
     "node_modules/@shoelace-style/shoelace/dist/assets" => "shoelace"
   }
-
 end

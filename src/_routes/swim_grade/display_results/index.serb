@@ -2,21 +2,33 @@
 
 # route: /swimgrade
 
-# def convert_to_seconds (time)
-# 
-#   if time.include? ":"
-#     mins,secs = time.split(":")
-#     time = mins.to_f * 60 + secs.to_f
-#   else
-#     time.to_f
-#   end
-# end
+def get_motivational_times(age, gender, age_type, distance, stroke, event_type)
+
+  member = site.data.motivational_times.find do |m|
+    m.age == age &&
+    m.gender == gender &&
+    m.age_type == age_type &&
+    m.distance == distance &&
+    m.stroke == stroke &&
+    m.event_type == event_type
+  end
+
+  member ? [member.aaaa, member.aaa, member.aa, member.a, member.bb, member.b] : nil
+
+end
+
+def convert_to_seconds (time)
+
+  if time.include? ":"
+    mins,secs = time.split(":")
+    time = mins.to_f * 60 + secs.to_f
+  else
+    time.to_f
+  end
+end
 
 r.get do
-  
-  puts "Available methods on view: #{view.methods.sort}"  # Debug line
-  puts "Helper methods: #{view.helper_methods}" if view.respond_to?(:helper_methods)  # Debug line  
-
+    
   age = r.params["age"]
   gender = r.params["gender"]
   age_type = r.params["age_type"]
@@ -24,16 +36,16 @@ r.get do
   distance, stroke, event_type = r.params["race"].downcase.split("_")
   time = r.params["time"]
 
-  times = view.get_motivational_times(age, gender, age_type, distance, stroke, event_type)
+  times = get_motivational_times(age, gender, age_type, distance, stroke, event_type)
 
-  AAAA = view.convert_to_seconds(times[0])
-  AAA = view.convert_to_seconds(times[1])
-  AA = view.convert_to_seconds(times[2])
-  A = view.convert_to_seconds(times[3])
-  BB = view.convert_to_seconds(times[4])
-  B = view.convert_to_seconds(times[5])
+  AAAA = convert_to_seconds(times[0])
+  AAA = convert_to_seconds(times[1])
+  AA = convert_to_seconds(times[2])
+  A = convert_to_seconds(times[3])
+  BB = convert_to_seconds(times[4])
+  B = convert_to_seconds(times[5])
 
-  case view.convert_to_seconds(time)
+  case convert_to_seconds(time)
   when 0..AAAA
     grade = "AAAA"
   when AAAA..AAA

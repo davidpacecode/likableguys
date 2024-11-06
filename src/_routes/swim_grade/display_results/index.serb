@@ -96,5 +96,5 @@ end
   </table>
 </div>
 
-
-
+2 + 2 =
+{{add_two_nums(2,2)}}

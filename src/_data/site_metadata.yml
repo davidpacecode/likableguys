@@ -9,3 +9,9 @@ tagline: We're generally pleasant and mostly inoffensive...
 email: contact_email_coming_soon@likableguys.com
 description: >-
   This is a site about things pertaining to two particularly likable guys. There'll be swimming information, fitness stuff, gaming information including some web games and, eventually, more. Now, "eventually" may mean "never," but I hope not. 
+
+collections:
+  meets:
+    output: true
+    permalink: pretty
+    future: true

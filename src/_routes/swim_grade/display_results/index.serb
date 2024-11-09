@@ -38,25 +38,25 @@ r.get do
 
   times = get_motivational_times(age, gender, age_type, distance, stroke, event_type)
 
-  AAAA = convert_to_seconds(times[0])
-  AAA = convert_to_seconds(times[1])
-  AA = convert_to_seconds(times[2])
-  A = convert_to_seconds(times[3])
-  BB = convert_to_seconds(times[4])
-  B = convert_to_seconds(times[5])
+  aaaa = convert_to_seconds(times[0])
+  aaa = convert_to_seconds(times[1])
+  aa = convert_to_seconds(times[2])
+  a = convert_to_seconds(times[3])
+  bb = convert_to_seconds(times[4])
+  b = convert_to_seconds(times[5])
 
   case convert_to_seconds(time)
-  when 0..AAAA
+  when 0..aaaa
     grade = "AAAA"
-  when AAAA..AAA
+  when aaaa..aaa
     grade = "AAA"
-  when AAA..AA
+  when aaa..aa
     grade = "AA"
-  when AA..A
+  when aa..a
     grade = "A"
-  when A..BB
+  when a..bb
     grade = "BB"
-  when BB..B
+  when bb..b
     grade = "B"
   else
     grade = "C"
@@ -96,5 +96,4 @@ end
   </table>
 </div>
 
-2 + 2 =
-{{add_two_nums(2,2)}}
+

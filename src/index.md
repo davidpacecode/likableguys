@@ -10,6 +10,8 @@ layout: default
 [2024 Surge Cornucopia Classic](https://www.gomotionapp.com/stssrg/UserFiles/Image/QuickUpload/saturday-heat-sheet_039988.pdf)
 <br />
 All races are Short Course and all distances are Yards
+<br />
+[Live results](https://swimnerd.live/score?id=1734)
 
 <div class="table-container">
   <table class="table">
@@ -36,11 +38,11 @@ All races are Short Course and all distances are Yards
         <td>2</td>
         <td>5</td>
         <td>27.96</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","50","fr","scy","27.96")}}</sl-badge></td>
+        <td>25.93</td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","fr","scy","25.93")}}</sl-badge></td>
+        <td>2nd</td>
+        <td><a href="https://youtu.be/3GtnsaOdNvg">Link to race</a></td>
       </tr>
       <tr>
         <td>12</td>
@@ -49,11 +51,11 @@ All races are Short Course and all distances are Yards
         <td>1</td>
         <td>5</td>
         <td>36.47</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","50","br","scy","36.47")}}</sl-badge></td>
+        <td>36.32</td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","br","scy","36.32")}}</sl-badge></td>
+        <td>3rd</td>
+        <td><a href="https://youtu.be/akmvvUInwsI">Link to race</a></td>
       </tr>
       <tr>
         <td>18</td>

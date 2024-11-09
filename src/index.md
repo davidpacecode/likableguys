@@ -4,10 +4,10 @@
 layout: default
 ---
 
-## We're generally pleasant and mostly inoffensive
+#### 2024 Surge Cornucopia Classic, November 9, 2024
 {:style="text-align:center"}
 
-[2024 Surge Cornucopia Classic](https://www.gomotionapp.com/stssrg/UserFiles/Image/QuickUpload/saturday-heat-sheet_039988.pdf)
+[Official race information](https://www.gomotionapp.com/stssrg/UserFiles/Image/QuickUpload/saturday-heat-sheet_039988.pdf)
 <br />
 All races are Short Course and all distances are Yards
 <br />

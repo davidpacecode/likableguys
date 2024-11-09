@@ -104,4 +104,5 @@ Bridgetown.configure do |config|
     "node_modules/@shoelace-style/shoelace/dist/assets" => "shoelace"
   }
   config.include_helpers_in_routes = true
- end
+  
+end

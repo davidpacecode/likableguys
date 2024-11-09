@@ -37,7 +37,8 @@ body {
 a {
   color: var(--action-color);
   text-decoration: underline;
-  text-decoration-color: #ffb088;
+  text-decoration-color: var(--action-color);
+  /*text-decoration-color: #ffb089;*/
 }
 
 h1 {

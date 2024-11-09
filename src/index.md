@@ -27,7 +27,7 @@ All races are Short Course and all distances are Yards
         <th>Race Time</th>
         <th>Race Grade</th>
         <th>Place</th>
-        <th>Link to Video</th>
+        <th>Race Videos</th>
       </tr>
     </thead>
     <tbody>
@@ -42,7 +42,7 @@ All races are Short Course and all distances are Yards
         <td>25.93</td>
         <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","fr","scy","25.93")}}</sl-badge></td>
         <td>2nd</td>
-        <td><a href="https://youtu.be/3GtnsaOdNvg">Link to race</a></td>
+        <td><a href="https://youtu.be/3GtnsaOdNvg">Watch on YouTube</a></td>
       </tr>
       <tr>
         <td>12</td>
@@ -55,7 +55,7 @@ All races are Short Course and all distances are Yards
         <td>36.32</td>
         <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","br","scy","36.32")}}</sl-badge></td>
         <td>3rd</td>
-        <td><a href="https://youtu.be/akmvvUInwsI">Link to race</a></td>
+        <td><a href="https://youtu.be/akmvvUInwsI">Watch on YouTube</a></td>
       </tr>
       <tr>
         <td>18</td>
@@ -64,7 +64,7 @@ All races are Short Course and all distances are Yards
         <td>1</td>
         <td>6</td>
         <td>2:29.80</td>
-        <td></td>
+        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","200","im","scy","2:29.80")}}</sl-badge></td>
         <td></td>
         <td></td>
         <td></td>
@@ -77,7 +77,7 @@ All races are Short Course and all distances are Yards
         <td>1</td>
         <td>1</td>
         <td>56.49</td>
-        <td></td>
+        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","100","fr","scy","56.49")}}</sl-badge></td>
         <td></td>
         <td></td>
         <td></td>

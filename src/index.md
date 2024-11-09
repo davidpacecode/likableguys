@@ -78,8 +78,8 @@ All races are Short Course and all distances are Yards
         <td>1</td>
         <td>56.49</td>
         <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","100","fr","scy","56.49")}}</sl-badge></td>
-        <td></td>
-        <td></td>
+        <td>58.25</td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","100","fr","scy","58.25")}}</sl-badge></td>
         <td></td>
         <td></td>
       </tr>

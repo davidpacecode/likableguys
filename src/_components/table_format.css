@@ -4,14 +4,18 @@
 
 .table-container {
     background: #fff;
-    width: 80vw;
+  /*  width: 80vw;*/
+    width: 100%;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), 5px 5px 10px rgba(0, 0, 0, 0.01);
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
+
 
 .table {
     width: 100%;
-    max-width: 850px;
+    mix-width: 850px;
     border-collapse: collapse;
 }
 
@@ -149,4 +153,21 @@ button i {
     background: #d2d21924;
     color: #d2d238;
     border: 1px solid #d2d219;
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 768px) {
+    .table-container {
+        margin: 0 -16px; /* Negative margin to compensate for main padding */
+        border-radius: 0; /* Remove border radius on mobile */
+    }
+    
+    main {
+        padding: 16px; /* Ensure consistent padding */
+    }
+    
+    .table th,
+    .table td {
+        padding: 8px 12px 5px 12px; /* Slightly reduced padding on mobile */
+    }
 }

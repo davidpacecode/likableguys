@@ -15,7 +15,7 @@
 
 .table {
     width: 100%;
-    mix-width: 850px;
+    min-width: 850px;
     border-collapse: collapse;
 }
 

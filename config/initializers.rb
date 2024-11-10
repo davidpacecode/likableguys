@@ -105,4 +105,13 @@ Bridgetown.configure do |config|
   }
   config.include_helpers_in_routes = true
 
+  config.collections = {
+    meets: {
+      output: true,
+      permalink: "meets/:slug",
+      sort_by: "date",
+      sort_direction: "descending"
+    }
+  }
+
 end

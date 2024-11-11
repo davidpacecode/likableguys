@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<article class="meet">
-  <h1>{{ data.title }}</h1>
-  <div class="content">
-    <%= yield %>
-  </div>
-</article>
+<h1>{{ data.title }}</h1>
+
+{%= yield %}
+
+
+

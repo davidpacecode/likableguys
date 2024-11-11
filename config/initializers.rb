@@ -105,13 +105,16 @@ Bridgetown.configure do |config|
   }
   config.include_helpers_in_routes = true
 
+  # this was finally the code to get a new meets collection created. Mostly from Claude
+  # note that bridgetown docs say this goes in bridgetown.config.yml which is not part of 2 beta 2
   config.collections = {
     meets: {
       output: true,
-      permalink: "meets/:slug",
+      permalink: "meets/:year/:month/:day/:slug/",
       sort_by: "date",
       sort_direction: "descending"
     }
   }
+
 
 end

@@ -1,10 +1,47 @@
 ---
 layout: default
 ---
-
-<h1>{{ data.title }}</h1>
+<center><h3>{{ data.title }}, {{data.date}}</h3></center>
 
 {%= yield %}
+
+
+<div class="table-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Race</th>
+        <th>Heat</th>
+        <th>Lane</th>
+        <th>Seed Time</th>
+        <th>Seed Grade</th>
+        <th>Race Time</th>
+        <th>Race Grade</th>
+        <th>Place</th>
+        <th>Race Videos</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for race in site.data.races %}
+        {% if race.date == data.date.to_s %}
+          <tr>
+            <td>{{race.event_no}}</td>
+            <td>{{race.distance + " " + race.stroke.upcase}}</td>
+            <td>{{race.heat}}</td>
+            <td>{{race.lane}}</td>
+            <td>{{race.seed_time}}</td>
+            <td><sl-badge variant="neutral" pill pulse>{{get_grade(race.age,race.gender,race.age_type,race.distance,race.stroke,race.event_type,race.seed_time)}}</sl-badge></td>
+            <td>{{race.time}}</td>
+            <td><sl-badge variant="success" pill pulse>{{get_grade(race.age,race.gender,race.age_type,race.distance,race.stroke,race.event_type,race.time)}}</sl-badge></td>
+            <td>{{race.place}}</td>
+            <td>Race Videos</td>
+          </tr>
+        {% end %}
+      {% end %}
+    </tbody>
+  </table>
+</div>
 
 
 

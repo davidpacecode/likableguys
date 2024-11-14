@@ -4,14 +4,19 @@
 layout: default
 ---
 
-#### 2024 Surge Cornucopia Classic, November 9, 2024
+#### WOW Harvest Hootenanny, November 16, 2024
 {:style="text-align:center"}
 
-[Official race information](https://www.gomotionapp.com/stssrg/UserFiles/Image/QuickUpload/saturday-heat-sheet_039988.pdf)
+**Meet Information**
+- [Map of the pool](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/wow-spectator-athlete-seating-chart-_002118.pdf)
+- [Projected Timeline](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/2024-wow-harvest-hootenanny-timeline_000997.pdf)
+- [Psych Sheets](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/2024-wow-harvest-hootenanny-psych-sheet_062668.pdf)
+- [Heat Sheets](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/heat-sheet_019619.pdf)
+
+
 <br />
 All races are Short Course and all distances are Yards
 <br />
-[Live results](https://swimnerd.live/score?id=1734)
 
 <div class="table-container">
   <table class="table">
@@ -32,59 +37,61 @@ All races are Short Course and all distances are Yards
     </thead>
     <tbody>
       <tr>
-        <td>6</td>
-        <td>9:42</td>
-        <td>50 FR</td>
         <td>2</td>
+        <td>9:19</td>
+        <td>100 IM</td>
         <td>5</td>
-        <td>27.96</td>
-        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","50","fr","scy","27.96")}}</sl-badge></td>
-        <td>25.93</td>
-        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","fr","scy","25.93")}}</sl-badge></td>
-        <td>2nd</td>
-        <td><a href="https://youtu.be/3GtnsaOdNvg">Watch on YouTube</a></td>
+        <td>4</td>
+        <td>1:11.01</td>
+        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","100","im","scy","1:11.01")}}</sl-badge></td>
+        <td>...</td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","100","im","scy","100:00.00")}}</sl-badge></td>
+        <td>...</td>
+        <td><a href="">Watch on YouTube</a></td>
       </tr>
       <tr>
-        <td>12</td>
-        <td>10:32</td>
-        <td>50 BR</td>
+        <td>7</td>
+        <td>9:55</td>
+        <td>50 FL</td>
+        <td>5</td>
+        <td>5</td>
+        <td>30.87</td>
+        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","50","fl","scy","30.87")}}</sl-badge></td>
+        <td>...</td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","fl","scy","100:00.0")}}</sl-badge></td>
+        <td>...</td>
+        <td><a href="">Watch on YouTube</a></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>10:06</td>
+        <td>200 FR</td>
         <td>1</td>
         <td>5</td>
-        <td>36.47</td>
-        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","50","br","scy","36.47")}}</sl-badge></td>
-        <td>36.32</td>
-        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","br","scy","36.32")}}</sl-badge></td>
-        <td>3rd</td>
-        <td><a href="https://youtu.be/akmvvUInwsI">Watch on YouTube</a></td>
+        <td>2:34.55</td>
+        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","200","fr","scy","2:34.55")}}</sl-badge></td>
+        <td>...</td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","200","fr","scy","100:00.00")}}</sl-badge></td>
+        <td>...</td>
+        <td><a href="">Watch on YouTube</a></td>
       </tr>
       <tr>
-        <td>18</td>
-        <td>11:54</td>
-        <td>200 IM</td>
-        <td>1</td>
-        <td>6</td>
-        <td>2:29.80</td>
-        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","200","im","scy","2:29.80")}}</sl-badge></td>
-        <td>2:30.88</td>
-        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","200","im","scy","2:30.88")}}</sl-badge></td>
-        <td>4th</td>
-        <td><a href="https://youtu.be/lhWR8FHQ7t4">Watch on YouTube</a></td>
-      </tr>
-      <tr>
-        <td>26</td>
-        <td>12:46</td>
+        <td>14</td>
+        <td>10:52</td>
         <td>100 FR</td>
-        <td>1</td>
-        <td>1</td>
-        <td>56.49</td>
-        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","100","fr","scy","56.49")}}</sl-badge></td>
-        <td>58.25</td>
-        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","100","fr","scy","58.25")}}</sl-badge></td>
-        <td>8th</td>
-        <td><a href="https://youtu.be/7kjLj79_Hpw">Watch on YouTube</a></td>
+        <td>7</td>
+        <td>2</td>
+        <td>59.11</td>
+        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","100","fr","scy","59.11")}}</sl-badge></td>
+        <td>...</td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","100","fr","scy","100:00.00")}}</sl-badge></td>
+        <td>...</td>
+        <td><a href="">Watch on YouTube</a></td>
       </tr>
     </tbody>
   </table>
 </div>
 
+Here are [some of the CMC's past swim meets](/meets/)
+<p>
 If you're looking to calculate the letter grade associated with a swimmer's race time based on USA Swimming's Motivational times, check out the [Swimgrade form](/swimming/swim_grade)

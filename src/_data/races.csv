@@ -1,10 +1,13 @@
 date,event_name,gender,age_type,age,distance,stroke,event_type,event_no,heat,lane,seed_time,time,place,url
-2020-09-26,junior mix,boys,age_group,10&u,100,fr,scy,2,4,3,2:14.60,12
 2024-11-09,2024 Surge Cornucopia Classic,boys,single_age,12,50,fr,scy,6,2,5,27.96,25.93,2nd,https://youtu.be/3GtnsaOdNvg
 2024-11-09,2024 Surge Cornucopia Classic,boys,single_age,12,50,br,scy,12,1,5,36.47,36.32,3rd,https://youtu.be/akmvvUInwsI
 2024-11-09,2024 Surge Cornucopia Classic,boys,single_age,12,200,im,scy,18,1,6,2:29.80,2:30.88,4th,https://youtu.be/lhWR8FHQ7t4
 2024-11-09,2024 Surge Cornucopia Classic,boys,single_age,12,100,fr,scy,26,1,1,56.49,58.25,8th,https://youtu.be/7kjLj79_Hpw
 2024-10-27,Longhorn Aquatics 11 and Over Fall Kick Off,boys,single_age,12,100,fr,scy,22,11,4,1:03.22,56.49,1st,https://youtu.be/lEIg_Ili_6s?si=emMzG-FBcCDjC7gx
-2024-10-27,Longhorn Aquatics 11 and Over Fall Kick Off,boys,single_age,12,50,fl,scy,23,5,8,33:18,30.04,1st,https://youtu.be/Q87PJ5yZqvo?si=_GwtLlKZUrEHVvuC
+2024-10-27,Longhorn Aquatics 11 and Over Fall Kick Off,boys,single_age,12,50,fl,scy,23,5,8,33.18,30.04,1st,https://youtu.be/Q87PJ5yZqvo?si=_GwtLlKZUrEHVvuC
 2024-10-27,Longhorn Aquatics 11 and Over Fall Kick Off,boys,single_age,12,50,br,scy,26,3,8,38.23,36.47,3rd,https://youtu.be/wy8elc4WCRY?si=8zn0zi8CtSqlA_ye
+2024-07-27,2024 ST YMCA July Sprint,boys,single_age,12,100,im,scy,1,6,1,1:21.68,1:11.01,2nd
+2024-07-27,2024 ST YMCA July Sprint,boys,single_age,12,50,br,scy,4,4,4,43.84,38.23,1st
+2024-07-27,2024 ST YMCA July Sprint,boys,single_age,12,50,fl,scy,6,3,5,36.16,33.18,2nd
+2024-07-27,2024 ST YMCA July Sprint,boys,single_age,12,50,fr,scy,8,9,5,29.54,27.96,3rd
 

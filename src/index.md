@@ -57,10 +57,10 @@ All races are Short Course and all distances are Yards
         <td>5</td>
         <td>30.87</td>
         <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","50","fl","scy","30.87")}}</sl-badge></td>
-        <td>...</td>
-        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","fl","scy","100:00.0")}}</sl-badge></td>
-        <td>...</td>
-        <td><a href="">Watch on YouTube</a></td>
+        <td>30.06</td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","fl","scy","30.06")}}</sl-badge></td>
+        <td>1st</td>
+        <td><a href="https://youtu.be/b3vTftofv7c">Watch on YouTube</a></td>
       </tr>
       <tr>
         <td>9</td>

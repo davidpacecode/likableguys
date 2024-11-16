@@ -2,6 +2,4 @@
 layout: default
 ---
 
-<center><h2>{{ data.title }}</h2></center>
-
 {%= yield %}

@@ -93,7 +93,6 @@ All races are Short Course and all distances are Yards
 </div>
 
 Here are [some of the CMC's past swim meets](/meets/)
-<p></p>
 
 If you're looking to calculate the letter grade associated with a swimmer's race time based on USA Swimming's Motivational times, check out the [SwimGrade form](/swimming/swim_grade/)
 

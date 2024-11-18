@@ -14,6 +14,8 @@ import "@shoelace-style/shoelace/dist/components/badge/badge.js"
 import "@shoelace-style/shoelace/dist/components/tab-panel/tab-panel.js"
 import "@shoelace-style/shoelace/dist/components/tab-group/tab-group.js"
 import "@shoelace-style/shoelace/dist/components/tab/tab.js"
+import "@shoelace-style/shoelace/dist/components/carousel-item/carousel-item.js"
+import "@shoelace-style/shoelace/dist/components/carousel/carousel.js"
 
 // Use the public icons folder:
 import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path.js"

@@ -7,12 +7,26 @@ layout: default
 #### WOW Harvest Hootenanny, November 16, 2024
 {:style="text-align:center"}
 
-**Meet Information**
-- [Map of the pool](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/wow-spectator-athlete-seating-chart-_002118.pdf)
-- [Projected Timeline](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/2024-wow-harvest-hootenanny-timeline_000997.pdf)
-- [Psych Sheets](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/2024-wow-harvest-hootenanny-psych-sheet_062668.pdf)
-- [Heat Sheets](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/heat-sheet_019619.pdf)
-
+<sl-carousel class="aspect-ratio" navigation pagination mouse-dragging loop style="--aspect-ratio: 1/1;">
+  <sl-carousel-item>
+    <img
+      alt="Pre race stance"
+      src="images/pre_race.png"
+    />
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <img
+      alt="Crouching on the blocks..."
+      src="images/blocks_low.png"
+    />
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <img
+      alt="Ready to race"
+      src="images/blocks_high.png"
+    />
+  </sl-carousel-item>
+</sl-carousel>
 
 <br />
 All races are Short Course and all distances are Yards
@@ -91,6 +105,12 @@ All races are Short Course and all distances are Yards
     </tbody>
   </table>
 </div>
+
+**Meet Information**
+- [Map of the pool](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/wow-spectator-athlete-seating-chart-_002118.pdf)
+- [Projected Timeline](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/2024-wow-harvest-hootenanny-timeline_000997.pdf)
+- [Psych Sheets](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/2024-wow-harvest-hootenanny-psych-sheet_062668.pdf)
+- [Heat Sheets](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/heat-sheet_019619.pdf)
 
 Here are [some of the CMC's past swim meets](/meets/)
 

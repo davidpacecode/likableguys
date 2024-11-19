@@ -115,6 +115,11 @@ All races are Short Course and all distances are Yards
 - [Purchase Parking Pass](https://utparking.clickandpark.com/)
 - [Results](http://www.txlameetresults.com/)
 
+**Sunday PM & Monday PM, 11-13 sessions**
+- Warm-ups are general. No lanes will be assigned. We will run fly over starts for all events. ALL events will run odd/even heats
+- Sunday PM: Warm-ups begin at 12:45 PM, Start lanes will open at 1:15 PM, Pool clears at 1:35 PM, Meet starts at 1:45 PM
+- Monday PM: Warm-ups begin at 1:00 PM, Start lanes will open at 1:30 PM, Pool clears at 1:50 PM, Meet start at 2:00 PM
+
 Here are [some of the CMC's past swim meets](/meets/)
 
 If you're looking to calculate the letter grade associated with a swimmer's race time based on USA Swimming's Motivational times, check out the [SwimGrade form](/swimming/swim_grade/)

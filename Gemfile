@@ -19,10 +19,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # If you need to upgrade/switch Bridgetown versions, change the line below
 # and then run `bundle update bridgetown`
-gem "bridgetown", "~> 2.0.0.beta2"
+gem "bridgetown", "~> 2.0.0.beta3"
 
 # Uncomment to add file-based dynamic routing to your project:
-gem "bridgetown-routes", "~> 2.0.0.beta2"
+gem "bridgetown-routes", "~> 2.0.0.beta3"
 
 # Puma is the Rack-compatible web server used by Bridgetown
 # (you can optionally limit this to the "development" group)

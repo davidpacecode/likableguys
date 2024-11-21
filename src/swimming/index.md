@@ -13,7 +13,7 @@ title: Swimming
     <ul>
       {% collections.meets.each do |meet| %}
         <li>
-          <a href="{{ meet.relative_url }}">{{ meet.data.title }}</a>
+          <a href="{{ meet.relative_url }}">{{ meet.data.date}} - {{ meet.data.title }}</a>
         </li>
       {% end %}
     </ul>

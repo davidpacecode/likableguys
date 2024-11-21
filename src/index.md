@@ -4,9 +4,10 @@
 layout: default
 ---
 
-#### WOW Harvest Hootenanny, November 16, 2024
+#### 2024 ST TXLA 11& Over November Unclassified, November 24-26, 2024
 {:style="text-align:center"}
 
+<!---
 <sl-carousel class="aspect-ratio" navigation pagination mouse-dragging loop style="--aspect-ratio: 1/1;">
   <sl-carousel-item>
     <img
@@ -27,6 +28,7 @@ layout: default
     />
   </sl-carousel-item>
 </sl-carousel>
+-->
 
 <br />
 All races are Short Course and all distances are Yards
@@ -107,10 +109,16 @@ All races are Short Course and all distances are Yards
 </div>
 
 **Meet Information**
-- [Map of the pool](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/wow-spectator-athlete-seating-chart-_002118.pdf)
-- [Projected Timeline](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/2024-wow-harvest-hootenanny-timeline_000997.pdf)
-- [Psych Sheets](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/2024-wow-harvest-hootenanny-psych-sheet_062668.pdf)
-- [Heat Sheets](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/heat-sheet_019619.pdf)
+- [Timeline](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/11-o-nuc-timeline_022917.pdf)
+- [Psych Sheet](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/11-o-nuc-psych-sheet_082769.pdf)
+- [Heat Sheets]()
+- [Purchase Parking Pass](https://utparking.clickandpark.com/)
+- [Results](http://www.txlameetresults.com/)
+
+**Sunday PM & Monday PM, 11-13 sessions**
+- Warm-ups are general. No lanes will be assigned. We will run fly over starts for all events. ALL events will run odd/even heats
+- Sunday PM: Warm-ups begin at 12:45 PM, Start lanes will open at 1:15 PM, Pool clears at 1:35 PM, Meet starts at 1:45 PM
+- Monday PM: Warm-ups begin at 1:00 PM, Start lanes will open at 1:30 PM, Pool clears at 1:50 PM, Meet start at 2:00 PM
 
 Here are [some of the CMC's past swim meets](/meets/)
 

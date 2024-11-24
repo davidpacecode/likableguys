@@ -84,10 +84,10 @@ layout: default
         <td>3</td>
         <td>25.93</td>
         <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","50","fr","scy","25.93")}}</sl-badge></td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>25.66</td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","fr","scy","25.66")}}</sl-badge></td>
+        <td>1st</td>
+        <td><a href="https://youtu.be/8vhYoHWHGuY">Watch on YouTube</a></td>
       </tr>
     </tbody>
   </table>

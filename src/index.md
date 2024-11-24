@@ -58,10 +58,10 @@ layout: default
         <td>4</td>
         <td>2:34.55</td>
         <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","200","fr","scy","2:34.55")}}</sl-badge></td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>2:09.71</td>
+        <td><sl-badge variant="success" pill>{{get_grade("12","boys","single_age","200","fr","scy","2:09.71")}}</sl-badge></td>
+        <td>2nd</td>
+        <td><a href="https://youtu.be/O1jzGURjHOk">Watch on YouTube</a></td>
       </tr>
       <tr>
         <td>9</td>

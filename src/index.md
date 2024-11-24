@@ -57,7 +57,7 @@ layout: default
         <td>23</td>
         <td>4</td>
         <td>2:34.55</td>
-        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","200","fr","scy","2:34.55")}}</sl-badge></td>
+        <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","200","fr","scy","2:34.55")}}</sl-badge></td>
         <td>...</td>
         <td>...</td>
         <td>...</td>
@@ -70,7 +70,7 @@ layout: default
         <td>26</td>
         <td>8</td>
         <td>41.37</td>
-        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","50","bk","scy","41.37")}}</sl-badge></td>
+        <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","50","bk","scy","41.37")}}</sl-badge></td>
         <td>...</td>
         <td>...</td>
         <td>...</td>
@@ -83,7 +83,7 @@ layout: default
         <td>3</td>
         <td>3</td>
         <td>25.93</td>
-        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","50","fr","scy","25.93")}}</sl-badge></td>
+        <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","50","fr","scy","25.93")}}</sl-badge></td>
         <td>...</td>
         <td>...</td>
         <td>...</td>
@@ -119,7 +119,7 @@ layout: default
         <td>3</td>
         <td>1</td>
         <td>56:49</td>
-        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","100","fr","scy","56.49")}}</sl-badge></td>
+        <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","100","fr","scy","56.49")}}</sl-badge></td>
         <td>...</td>
         <td>...</td>
         <td>...</td>
@@ -132,7 +132,7 @@ layout: default
         <td>12</td>
         <td>3</td>
         <td>1:15.99</td>
-        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","100","fl","scy","1:15.99")}}</sl-badge></td>
+        <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","100","fl","scy","1:15.99")}}</sl-badge></td>
         <td>...</td>
         <td>...</td>
         <td>...</td>
@@ -145,7 +145,7 @@ layout: default
         <td>7</td>
         <td>5</td>
         <td>2:29.80</td>
-        <td><sl-badge variant="neutral" pill pulse>{{get_grade("12","boys","single_age","200","im","scy","2:29.80")}}</sl-badge></td>
+        <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","200","im","scy","2:29.80")}}</sl-badge></td>
         <td>...</td>
         <td>...</td>
         <td>...</td>

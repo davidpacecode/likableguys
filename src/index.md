@@ -36,13 +36,9 @@ layout: default
   <table class="table">
     <thead>
       <tr>
-        <th>Event</th>
-        <th>Start Time</th>
         <th>Race</th>
-        <th>Heat</th>
         <th>Lane</th>
         <th>Seed Time</th>
-        <th>Seed Grade</th>
         <th>Race Time</th>
         <th>Race Grade</th>
         <th>Place</th>
@@ -51,39 +47,27 @@ layout: default
     </thead>
     <tbody>
       <tr>
-        <td>7</td>
-        <td>1:45pm</td>
         <td>200 FR</td>
-        <td>23</td>
         <td>4</td>
         <td>2:34.55</td>
-        <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","200","fr","scy","2:34.55")}}</sl-badge></td>
         <td>2:09.71</td>
-        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","200","fr","scy","2:09.71")}}</sl-badge></td>
+        <td><sl-badge variant="success" pill>{{get_grade("12","boys","single_age","200","fr","scy","2:09.71")}}</sl-badge></td>
         <td>2nd</td>
         <td><a href="https://youtu.be/O1jzGURjHOk">Watch on YouTube</a></td>
       </tr>
       <tr>
-        <td>9</td>
-        <td>2:57pm</td>
         <td>50 BK</td>
-        <td>26</td>
         <td>8</td>
         <td>41.37</td>
-        <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","50","bk","scy","41.37")}}</sl-badge></td>
         <td>33.91</td>
-        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","bk","scy","33.91")}}</sl-badge></td>
+        <td><sl-badge variant="primary" pill>{{get_grade("12","boys","single_age","50","bk","scy","33.91")}}</sl-badge></td>
         <td>1st</td>
         <td><a href="https://youtu.be/sHs3sTtuWCQ">Watch on YouTube</a></td>
       </tr>
       <tr>
-        <td>11</td>
-        <td>3:31pm</td>
         <td>50 FR</td>
         <td>3</td>
-        <td>3</td>
         <td>25.93</td>
-        <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","50","fr","scy","25.93")}}</sl-badge></td>
         <td>25.66</td>
         <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","fr","scy","25.66")}}</sl-badge></td>
         <td>1st</td>

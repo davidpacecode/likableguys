@@ -38,7 +38,6 @@ layout: default
       <tr>
         <th>Race</th>
         <th>Lane</th>
-        <th>Seed Time</th>
         <th>Race Time</th>
         <th>Race Grade</th>
         <th>Place</th>
@@ -49,7 +48,6 @@ layout: default
       <tr>
         <td>200 FR</td>
         <td>4</td>
-        <td>2:34.55</td>
         <td>2:09.71</td>
         <td><sl-badge variant="success" pill>{{get_grade("12","boys","single_age","200","fr","scy","2:09.71")}}</sl-badge></td>
         <td>2nd</td>
@@ -58,7 +56,6 @@ layout: default
       <tr>
         <td>50 BK</td>
         <td>8</td>
-        <td>41.37</td>
         <td>33.91</td>
         <td><sl-badge variant="primary" pill>{{get_grade("12","boys","single_age","50","bk","scy","33.91")}}</sl-badge></td>
         <td>1st</td>
@@ -67,7 +64,6 @@ layout: default
       <tr>
         <td>50 FR</td>
         <td>3</td>
-        <td>25.93</td>
         <td>25.66</td>
         <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","fr","scy","25.66")}}</sl-badge></td>
         <td>1st</td>

@@ -59,7 +59,7 @@ layout: default
         <td>2:34.55</td>
         <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","200","fr","scy","2:34.55")}}</sl-badge></td>
         <td>2:09.71</td>
-        <td><sl-badge variant="success" pill>{{get_grade("12","boys","single_age","200","fr","scy","2:09.71")}}</sl-badge></td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","200","fr","scy","2:09.71")}}</sl-badge></td>
         <td>2nd</td>
         <td><a href="https://youtu.be/O1jzGURjHOk">Watch on YouTube</a></td>
       </tr>
@@ -71,10 +71,10 @@ layout: default
         <td>8</td>
         <td>41.37</td>
         <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","50","bk","scy","41.37")}}</sl-badge></td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>33.91</td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","bk","scy","33.91")}}</sl-badge></td>
+        <td>1st</td>
+        <td><a href="https://youtu.be/sHs3sTtuWCQ">Watch on YouTube</a></td>
       </tr>
       <tr>
         <td>11</td>

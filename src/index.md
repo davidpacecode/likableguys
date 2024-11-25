@@ -64,6 +64,7 @@ layout: default
   </sl-carousel-item>
 </sl-carousel>
 
+<!---
 **Monday pm**
 <div class="table-container">
   <table class="table">
@@ -117,10 +118,45 @@ layout: default
         <td>5</td>
         <td>2:29.80</td>
         <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","200","im","scy","2:29.80")}}</sl-badge></td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>2:31.33</td>
+        <td><sl-badge variant="primary" pill>{{get_grade("12","boys","single_age","200","im","scy","2:31.33")}}</sl-badge></td>
+        <td>6th</td>
+        <td><a href="">Watch (Lane 5, 6th place)</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+-->
+
+**Monday pm**
+<div class="table-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Race</th>
+        <th>Time</th>
+        <th>Grade</th>
+        <th>Videos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>100 FR</td>
+        <td>57.02</td>
+        <td><sl-badge variant="success" pill>{{get_grade("12","boys","single_age","100","fr","scy","57.02")}}</sl-badge></td>
+        <td><a href="https://youtu.be/CIc0trjmSW4">Watch (lane 1, 4th place)</a></td>
+      </tr>
+      <tr>
+        <td>100 FL</td>
+        <td>1:11.14</td>
+        <td><sl-badge variant="primary" pill>{{get_grade("12","boys","single_age","100","fl","scy","1:11.14")}}</sl-badge></td>
+        <td><a href="https://youtu.be/Z0ffOM3LqLY">Watch (lane 3, 1st place)</a></td>
+      </tr>
+      <tr>
+        <td>200 IM</td>
+        <td>2:31.33</td>
+        <td><sl-badge variant="success" pill>{{get_grade("12","boys","single_age","200","im","scy","2:31.33")}}</sl-badge></td>
+        <td><a href="https://youtu.be/vcilbKPil8E">Watch (lane 5, 6th place)</a></td>
       </tr>
     </tbody>
   </table>
@@ -144,23 +180,27 @@ layout: default
         <td>200 FR</td>
         <td>2:09.71</td>
         <td><sl-badge variant="success" pill>{{get_grade("12","boys","single_age","200","fr","scy","2:09.71")}}</sl-badge></td>
-        <td><a href="https://youtu.be/O1jzGURjHOk">Watch the race (lane 4, 2nd place)</a></td>
+        <td><a href="https://youtu.be/O1jzGURjHOk">Watch (lane 4, 2nd place)</a></td>
       </tr>
       <tr>
         <td>50 BK</td>
         <td>33.91</td>
         <td><sl-badge variant="primary" pill>{{get_grade("12","boys","single_age","50","bk","scy","33.91")}}</sl-badge></td>
-        <td><a href="https://youtu.be/sHs3sTtuWCQ">Watch the race (lane 8, 1st place)</a></td>
+        <td><a href="https://youtu.be/sHs3sTtuWCQ">Watch (lane 8, 1st place)</a></td>
       </tr>
       <tr>
         <td>50 FR</td>
         <td>25.66</td>
         <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","50","fr","scy","25.66")}}</sl-badge></td>
-        <td><a href="https://youtu.be/8vhYoHWHGuY">Watch the race (lane 3, 1st place)</a></td>
+        <td><a href="https://youtu.be/8vhYoHWHGuY">Watch (lane 3, 1st place)</a></td>
       </tr>
     </tbody>
   </table>
 </div>
+
+<br />
+
+
 
 
 **Meet Information**

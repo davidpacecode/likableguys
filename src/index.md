@@ -104,10 +104,10 @@ layout: default
         <td>3</td>
         <td>1:15.99</td>
         <td><sl-badge variant="neutral" pill>{{get_grade("12","boys","single_age","100","fl","scy","1:15.99")}}</sl-badge></td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>lt 1:11.55?</td>
+        <td><sl-badge variant="neutral" pill>???</sl-badge></td>
+        <td>DQ?</td>
+        <td><a href="https://youtu.be/Z0ffOM3LqLY">Watch on YouTube</a></td>
       </tr>
       <tr>
         <td>24</td>

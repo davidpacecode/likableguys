@@ -22,7 +22,7 @@ title: Swimming
   <sl-tab-panel name="swim_grade_calculator">
 
     <br />
-    Enter the details of an athlete's performance at a race and calculate their <a href="https://swimswam.com/usa-swimming-releases-age-group-motivational-times-for-2024-2028/">Motivational Time Standard Level</a>
+    Enter the details of an athlete's performance at a race and calculate their <a href="https://swimswam.com/usa-swimming-releases-age-group-motivational-times-for-2024-2028/">Motivational Time Standard Level</a> (<a href="assets/2028-motivational-standards-single-age.pdf">Single Age</a> or <a href="assets/2028-motivational-standards-age-group.pdf">Age Group</a>)
     <br />
     <br />
     <form class="input-validation-required" action="/swim_grade/event_and_time" method="get">

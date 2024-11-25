@@ -6,7 +6,7 @@ layout: default
 
 ## Swimgrade <sup>TM</sup>
 {:style="text-align:center"}
-#### Enter the details of an athlete's performance at a race and calculate their [Motivational Time Standard Level](https://swimswam.com/usa-swimming-releases-age-group-motivational-times-for-2024-2028/)
+#### Enter the details of an athlete's performance at a race and calculate their [Motivational Time Standard Level](https://swimswam.com/usa-swimming-releases-age-group-motivational-times-for-2024-2028/) [Single Age](/assets/2028-motivational-standards-single-age.pdf) and [Age Group](/assets/2028-motivational-standards-age-group.pdf)
 {:style="text-align:center"}
 
 <form class="input-validation-required" action="/swim_grade/event_and_time" method="get">

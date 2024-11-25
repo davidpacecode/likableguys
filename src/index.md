@@ -28,6 +28,12 @@ layout: default
   </sl-carousel-item>
   <sl-carousel-item>
     <img
+      alt="Evan after butterfly"
+      src="images/txla_november_2024/evan_after_butterfly.jpg"
+    />
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <img
       alt="First AAA time"
       src="images/txla_november_2024/first_aaa.jpg"
     />

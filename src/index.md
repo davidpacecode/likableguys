@@ -7,28 +7,62 @@ layout: default
 #### 2024 ST TXLA 11& Over November Unclassified, November 24-26, 2024
 {:style="text-align:center"}
 
-<!---
 <sl-carousel class="aspect-ratio" navigation pagination mouse-dragging loop style="--aspect-ratio: 1/1;">
   <sl-carousel-item>
     <img
-      alt="Pre race stance"
-      src="images/pre_race.png"
+      alt="Evan on the Blocks"
+      src="images/txla_november_2024/evan_on_blocks.jpg"
     />
   </sl-carousel-item>
   <sl-carousel-item>
     <img
-      alt="Crouching on the blocks..."
-      src="images/blocks_low.png"
+      alt="Evan pre back stroke"
+      src="images/txla_november_2024/evan_pre_back_stroke.jpg"
     />
   </sl-carousel-item>
   <sl-carousel-item>
     <img
-      alt="Ready to race"
-      src="images/blocks_high.png"
+      alt="Evan pre race"
+      src="images/txla_november_2024/evan_pre_race.jpg"
+    />
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <img
+      alt="First AAA time"
+      src="images/txla_november_2024/first_aaa.jpg"
+    />
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <img
+      alt="Letter winners wall"
+      src="images/txla_november_2024/letter_winners_wall.jpg"
+    />
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <img
+      alt="Pool wide view"
+      src="images/txla_november_2024/pool_wide_view_active.jpg"
+    />
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <img
+      alt="Empty Pool"
+      src="images/txla_november_2024/pool_wide_view_empty.jpg"
+    />
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <img
+      alt="Steeped in tradition"
+      src="images/txla_november_2024/steeped_in_tradition.jpg"
+    />
+  </sl-carousel-item>
+  <sl-carousel-item>
+    <img
+      alt="Trophy Wall"
+      src="images/txla_november_2024/trophy_wall.jpg"
     />
   </sl-carousel-item>
 </sl-carousel>
--->
 
 <br />
 **Sunday pm**

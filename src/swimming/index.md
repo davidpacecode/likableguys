@@ -5,6 +5,7 @@ title: Swimming
 
 <sl-tab-group>
   <sl-tab slot="nav" panel="swim_meets">Swim Meets</sl-tab>
+  <sl-tab slot="nav" panel="cmc_top_times">CMC's Top Times</sl-tab>
   <sl-tab slot="nav" panel="swim_grade_calculator">Swim Grade Calculator</sl-tab>
   <sl-tab slot="nav" panel="motivational_time_browser" disabled>Motivational Time Browser</sl-tab>
 
@@ -17,6 +18,11 @@ title: Swimming
         </li>
       {% end %}
     </ul>
+  </sl-tab-panel>
+
+  <sl-tab-panel name="cmc_top_times">
+    Here are the CMC's top times:
+    <iframe id="preview-frame" src="https://www.swimcloud.com/swimmer/2977293/iframe/?splashes_type=fastest" width="100%" height="500px" frameborder="0"></iframe>>
   </sl-tab-panel>
 
   <sl-tab-panel name="swim_grade_calculator">

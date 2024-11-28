@@ -13,7 +13,7 @@ layout: default
 
   <sl-select name="age" label="Please enter the athlete's age" value="12" required>
     <sl-option value="12">12</sl-option>
-    <sl-option value="13" disabled>13</sl-option>
+    <sl-option value="13">13</sl-option>
   </sl-select>
 <br />
 
@@ -49,7 +49,7 @@ layout: default
     customElements.whenDefined('sl-input'),
     customElements.whenDefined('sl-option'),
     customElements.whenDefined('sl-select'),
-    customElements.whenDefined('sl-textarea')
+    customElements.('sl-textarea')
   ]).then(() => {
     form.addEventListener('submit', event => {
       event.preventDefault();

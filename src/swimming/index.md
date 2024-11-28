@@ -33,7 +33,7 @@ title: Swimming
     <br />
     <form class="input-validation-required" action="/swim_grade/event_and_time" method="get">
 
-      <sl-select name="age" label="Please enter the athlete's age" required>
+      <sl-select name="age" label="Please enter the athlete's age" value="12" required>
         <sl-option value="12">12</sl-option>
         <sl-option value="13">13</sl-option>
       </sl-select>

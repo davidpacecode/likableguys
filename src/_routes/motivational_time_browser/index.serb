@@ -1,0 +1,66 @@
+---<%
+
+  # route: /motivational_time_browser
+
+  r.get do
+
+    age = r.params["age"]
+    gender = r.params["gender"]
+    event_type = r.params["event_type"]
+    age_type = r.params["age_type"]
+
+    render_with do
+      layout :page
+      title ""
+    end
+
+  end
+
+%>---
+
+<b>Age:</b> {%=age%} <br />
+<b>Gender:</b> {%=gender.capitalize%} <br />
+<b>Event Type:</b> {%=event_type.upcase%} <br />
+<b>Age Type:</b> {%=age_type%} <br />
+<br />
+
+<div class="table-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th><b>Race</b></th>
+        <th><b>AAAA</b></th>
+        <th><b>AAA</b></th>
+        <th><b>AA</b></th>
+        <th><b>A</b></th>
+        <th><b>BB</b></th>
+        <th><b>B</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for member in site.data.motivational_times %}
+        {% if member.age == age && member.gender == gender && member.event_type == event_type && member.age_type == age_type %}
+          <tr>
+            <td>{%=member.distance.upcase%} {%=member.stroke.upcase%} {%=member.event_type.upcase%}</td>
+            <td>{%=member.aaaa%}</td>
+            <td>{%=member.aaa%}</td>
+            <td>{%=member.aa%}</td>
+            <td>{%=member.a%}</td>
+            <td>{%=member.bb%}</td>
+            <td>{%=member.b%}</td>
+          </tr>
+        {% end %}
+      {% end %}
+   </tbody>
+  </table>
+</div>
+
+
+ 
+  <!--- Hidden fields to pass to next form -->
+  <input type="hidden" name="age" value="{%=age%}"></input>
+  <input type="hidden" name="gender" value="{%=gender%}"></input>
+  <input type="hidden" name="event_type" value="{%=event_type%}"></input>
+  <input type="hidden" name="age_type" value="{%=age_type%}"></input>
+
+

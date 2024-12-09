@@ -4,7 +4,7 @@
 layout: default
 ---
 
-#### 2024 ST TXLA 11& Over November Unclassified, November 24-26, 2024
+#### 2024 ST TXLA 11 & Over November Unclassified, November 24-26, 2024
 {:style="text-align:center"}
 
 <sl-carousel class="aspect-ratio" navigation pagination mouse-dragging loop style="--aspect-ratio: 1/1;">

@@ -4,9 +4,10 @@
 layout: default
 ---
 
-#### 2024 ST TXLA 11 & Over November Unclassified, November 24-26, 2024
+#### 2024 ST Winter Wonderland
 {:style="text-align:center"}
 
+<!---
 <sl-carousel class="aspect-ratio" navigation pagination mouse-dragging loop style="--aspect-ratio: 1/1;">
   <sl-carousel-item>
     <img
@@ -69,6 +70,68 @@ layout: default
     />
   </sl-carousel-item>
 </sl-carousel>
+-->
+
+<div class="table-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Start Time</th>
+        <th>Race</th>
+        <th>Heat</th>
+        <th>Lane</th>
+        <th>Seed Time</th>
+        <th>Seed Grade</th>
+        <th>Race Time</th>
+        <th>Race Grade</th>
+        <th>Place</th>
+        <th>Race Videos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>16</td>
+        <td>???</td>
+        <td>50 BR</td>
+        <td>3</td>
+        <td>7</td>
+        <td>36.32</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>???</td>
+        <td>100 IM</td>
+        <td>3</td>
+        <td>4</td>
+        <td>1:08.46</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+        <td>24</td>
+        <td>???</td>
+        <td>100 FR</td>
+        <td>10</td>
+        <td>8</td>
+        <td>56.49</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+    </tbody>
+  </table>
+</div>
+
+
 
 <!---
 **Monday pm**
@@ -134,6 +197,7 @@ layout: default
 </div>
 -->
 
+<!---
 **Monday pm**
 <div class="table-container">
   <table class="table">
@@ -203,26 +267,15 @@ layout: default
     </tbody>
   </table>
 </div>
-
+-->
 <br />
 
 
 
 
 **Meet Information**
-- [Timeline](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/11-o-nuc-timeline_022917.pdf)
-- [Psych Sheet](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/11-o-nuc-psych-sheet_082769.pdf)
-- Heat Sheets:
-  - [Sunday pm](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/sunday-pm--11-13-heat-sheet_024302.pdf)
-  - [Monday pm](https://www.gomotionapp.com/stccsst/UserFiles/Image/QuickUpload/monday-pm--11-13-heat-sheet_026563.pdf)
-- [Purchase Parking Pass](https://utparking.clickandpark.com/)
-- [Results](http://www.txlameetresults.com/)
-
-**Sunday PM & Monday PM, 11-13 sessions**
-- Warm-ups are general. No lanes will be assigned. We will run fly over starts for all events. ALL events will run odd/even heats
-- Sunday PM: Warm-ups begin at 12:45 PM, Start lanes will open at 1:15 PM, Pool clears at 1:35 PM, Meet starts at 1:45 PM
-- Monday PM: Warm-ups begin at 1:00 PM, Start lanes will open at 1:30 PM, Pool clears at 1:50 PM, Meet start at 2:00 PM
-- All races are Short Course and all distances are Yards
+- [2024 Winter Wonderland Meet Information](https://drive.google.com/drive/folders/1bpPLZ9ePcdh6FQ9MyQrNz-LvEB_uJuTH?usp=drive_link)
+<br />
 
 Here are [some of the CMC's past swim meets](/meets/)
 

@@ -72,6 +72,69 @@ layout: default
 </sl-carousel>
 -->
 
+**Finals**
+
+<div class="table-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Start Time</th>
+        <th>Race</th>
+        <th>Heat</th>
+        <th>Lane</th>
+        <th>Seed Time</th>
+        <th>Seed Grade</th>
+        <th>Race Time</th>
+        <th>Race Grade</th>
+        <th>Place</th>
+        <th>Race Videos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>16</td>
+        <td>???</td>
+        <td>50 BR</td>
+        <td>4</td>
+        <td>7</td>
+        <td>36.74</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>???</td>
+        <td>100 IM</td>
+        <td>3</td>
+        <td>5</td>
+        <td>1:10.46</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+        <td>24</td>
+        <td>???</td>
+        <td>100 FR</td>
+        <td>4</td>
+        <td>7</td>
+        <td>56.49</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+    </tbody>
+  </table>
+</div>
+
+**Prelims**
+
 <div class="table-container">
   <table class="table">
     <thead>

@@ -7,70 +7,26 @@ layout: default
 #### 2024 ST Winter Wonderland
 {:style="text-align:center"}
 
-<!---
 <sl-carousel class="aspect-ratio" navigation pagination mouse-dragging loop style="--aspect-ratio: 1/1;">
   <sl-carousel-item>
     <img
-      alt="Evan on the Blocks"
-      src="images/txla_november_2024/evan_on_blocks.jpg"
+      alt="Indoor pool"
+      src="images/st_winter_wonderland_2024/indoor_pool.jpg"
     />
   </sl-carousel-item>
   <sl-carousel-item>
     <img
-      alt="Evan pre back stroke"
-      src="images/txla_november_2024/evan_pre_back_stroke.jpg"
+      alt="Outdoor pool"
+      src="images/st_winter_wonderland_2024/outdoor_pool.jpg"
     />
   </sl-carousel-item>
   <sl-carousel-item>
     <img
-      alt="Evan pre race"
-      src="images/txla_november_2024/evan_pre_race.jpg"
-    />
-  </sl-carousel-item>
-  <sl-carousel-item>
-    <img
-      alt="Evan after butterfly"
-      src="images/txla_november_2024/evan_after_butterfly.jpg"
-    />
-  </sl-carousel-item>
-  <sl-carousel-item>
-    <img
-      alt="First AAA time"
-      src="images/txla_november_2024/first_aaa.jpg"
-    />
-  </sl-carousel-item>
-  <sl-carousel-item>
-    <img
-      alt="Letter winners wall"
-      src="images/txla_november_2024/letter_winners_wall.jpg"
-    />
-  </sl-carousel-item>
-  <sl-carousel-item>
-    <img
-      alt="Pool wide view"
-      src="images/txla_november_2024/pool_wide_view_active.jpg"
-    />
-  </sl-carousel-item>
-  <sl-carousel-item>
-    <img
-      alt="Empty Pool"
-      src="images/txla_november_2024/pool_wide_view_empty.jpg"
-    />
-  </sl-carousel-item>
-  <sl-carousel-item>
-    <img
-      alt="Steeped in tradition"
-      src="images/txla_november_2024/steeped_in_tradition.jpg"
-    />
-  </sl-carousel-item>
-  <sl-carousel-item>
-    <img
-      alt="Trophy Wall"
-      src="images/txla_november_2024/trophy_wall.jpg"
+      alt="Olympic training"
+      src="images/st_winter_wonderland_2024/olympic_training.jpg"
     />
   </sl-carousel-item>
 </sl-carousel>
--->
 
 **Finals**
 
@@ -78,60 +34,37 @@ layout: default
   <table class="table">
     <thead>
       <tr>
-        <th>Event</th>
-        <th>Start Time</th>
         <th>Race</th>
-        <th>Heat</th>
-        <th>Lane</th>
-        <th>Seed Time</th>
-        <th>Seed Grade</th>
-        <th>Race Time</th>
-        <th>Race Grade</th>
-        <th>Place</th>
-        <th>Race Videos</th>
+        <th>Time</th>
+        <th>Grade</th>
+        <th>Videos</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>16</td>
-        <td>???</td>
         <td>50 BR</td>
-        <td>4</td>
-        <td>7</td>
-        <td>36.74</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>36.04</td>
+        <td><sl-badge variant="success" pill>{{get_grade("12","boys","single_age","50","br","scy","36.04")}}</sl-badge></td>
+        <td><a href="https://youtu.be/LN9lxxTpvBc">Watch (lane 7, 5th place)</a></td>
       </tr>
       <tr>
-        <td>22</td>
-        <td>???</td>
         <td>100 IM</td>
-        <td>3</td>
-        <td>5</td>
-        <td>1:10.46</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>1:10.03</td>
+        <td><sl-badge variant="primary" pill>{{get_grade("12","boys","single_age","100","im","scy","1:10.03")}}</sl-badge></td>
+        <td><a href="https://youtu.be/tUXZ8pYUOYk">Watch (lane 5, 9th place)</a></td>
       </tr>
-        <td>24</td>
-        <td>???</td>
+      <tr>
         <td>100 FR</td>
-        <td>4</td>
-        <td>7</td>
-        <td>56.49</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>57.93</td>
+        <td><sl-badge variant="success" pill pulse>{{get_grade("12","boys","single_age","100","fr","scy","57.93")}}</sl-badge></td>
+        <td><a href="https://youtu.be/0ypuOBTmFzQ">Watch (lane 7, 5th place)</a></td>
+      </tr>
     </tbody>
   </table>
 </div>
+
+<br />
+
 
 **Prelims**
 
@@ -139,62 +72,34 @@ layout: default
   <table class="table">
     <thead>
       <tr>
-        <th>Event</th>
-        <th>Start Time</th>
         <th>Race</th>
-        <th>Heat</th>
-        <th>Lane</th>
-        <th>Seed Time</th>
-        <th>Seed Grade</th>
-        <th>Race Time</th>
-        <th>Race Grade</th>
-        <th>Place</th>
-        <th>Race Videos</th>
+        <th>Time</th>
+        <th>Grade</th>
+        <th>Videos</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>16</td>
-        <td>???</td>
         <td>50 BR</td>
-        <td>3</td>
-        <td>7</td>
-        <td>36.32</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>36.74</td>
+        <td><sl-badge variant="primary" pill>{{get_grade("12","boys","single_age","50","br","scy","36.74")}}</sl-badge></td>
+        <td><a href="https://youtu.be/uh-V46o-15U">Watch (lane 7, 7th place)</a></td>
       </tr>
       <tr>
-        <td>22</td>
-        <td>???</td>
         <td>100 IM</td>
-        <td>3</td>
-        <td>4</td>
-        <td>1:08.46</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>1:10.46</td>
+        <td><sl-badge variant="primary" pill>{{get_grade("12","boys","single_age","100","im","scy","1:10.46")}}</sl-badge></td>
+        <td><a href="https://youtu.be/HUBCRgkMSNA">Watch (lane 4, 10th place)</a></td>
       </tr>
-        <td>24</td>
-        <td>???</td>
+      <tr>
         <td>100 FR</td>
-        <td>10</td>
-        <td>8</td>
-        <td>56.49</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>59.53</td>
+        <td><sl-badge variant="success" pill>{{get_grade("12","boys","single_age","100","fr","scy","59.53")}}</sl-badge></td>
+        <td><a href="https://youtu.be/ApBqE9Jkafs">Watch (lane 7, 6th place)</a></td>
+      </tr>
     </tbody>
   </table>
 </div>
-
-
 
 <!---
 **Monday pm**

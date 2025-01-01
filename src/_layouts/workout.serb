@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<center><h3>{{data.date}}</h3></center>
+
+{%= yield %}
+
+<div class="workout-details-group">
+  <sl-details summary="Workout">
+    {{ resource.data.workout_details }}
+  </sl-details>
+
+  <sl-details summary="Cardio">
+    {{ "Primary Walk: #{resource.data.primary_walk}" }}
+    <br>
+    {{ "Other Cardio: #{resource.data.other_cardio}" }}
+    <br>
+    {{ "Total Steps: #{resource.data.total_steps}" }}
+  </sl-details>
+
+  <sl-details summary="Other">
+    {{ resource.data.other }}
+  </sl-details>
+
+  <sl-details summary="Did I eat like an asshole on this day?">
+    {{ resource.data.eat_like_an_asshole }}
+    <br>
+    <a href="https://share.snipd.com/chapter/2f8526df-903f-41b9-b3fb-f49427406598">Jocko describes what it means to eat like an asshole...</a>
+  </sl-details>
+</div>
+
+<script>
+  const container = document.querySelector('.details-group-example');
+
+  // Close all other details when one is shown
+  container.addEventListener('sl-show', event => {
+    if (event.target.localName === 'sl-details') {
+      [...container.querySelectorAll('sl-details')].map(details => (details.open = event.target === details));
+    }
+  });
+</script>
+
+<style>
+  .details-group-example sl-details:not(:last-of-type) {
+    margin-bottom: var(--sl-spacing-2x-small);
+  }
+</style>
+

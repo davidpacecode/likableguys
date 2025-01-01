@@ -116,5 +116,14 @@ Bridgetown.configure do |config|
     }
   }
 
+  config.collections = {
+    workouts: {
+      output: true,
+      permalink: "workouts/:year/:month/:day/:slug/",
+      sort_by: "date",
+      sort_direction: "descending"
+    }
+  }
+
 
 end

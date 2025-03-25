@@ -1,0 +1,31 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= @standard_type == 'single_age' ? 'Age' : 'Age Group' %></th>
+      <th>Event</th>
+      <th>Course</th>
+      <th>B</th>
+      <th>BB</th>
+      <th>A</th>
+      <th>AA</th>
+      <th>AAA</th>
+      <th>AAAA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @standards.each do |standard| %>
+      <tr>
+        <td><%= @standard_type == 'single_age' ? standard.age : standard.age_group %></td>
+        <td><%= standard.event.upcase %></td>
+        <td><%= standard.course.upcase %></td>
+        <td><%= standard.b %></td>
+        <td><%= standard.bb %></td>
+        <td><%= standard.a %></td>
+        <td><%= standard.aa %></td>
+        <td><%= standard.aaa %></td>
+        <td><%= standard.aaaa %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

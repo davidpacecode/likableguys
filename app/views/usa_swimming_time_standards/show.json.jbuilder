@@ -1,0 +1,1 @@
+json.partial! "usa_swimming_time_standards/usa_swimming_time_standard", usa_swimming_time_standard: @usa_swimming_time_standard

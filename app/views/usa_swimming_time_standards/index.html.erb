@@ -1,0 +1,132 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "USA Swimming Time Standards" %>
+
+<h1>USA Swimming Time Standards</h1>
+
+<wa-tab-group>
+  <wa-tab panel="single_age_scy">Single Age SCY</wa-tab>
+  <wa-tab panel="single_age_scm">Single Age SCM</wa-tab>
+  <wa-tab panel="single_age_lcm">Single Age LCM</wa-tab>
+  <wa-tab panel="age_group_scy">Age Group SCY</wa-tab>
+  <wa-tab panel="age_group_scm">Age Group SCM</wa-tab>
+  <wa-tab panel="age_group_lcm">Age Group LCM</wa-tab>
+
+  <wa-tab-panel name="single_age_scy">
+    <wa-tab-group placement="start">
+      <wa-tab panel="boys">Boys</wa-tab>
+      <wa-tab panel="girls">Girls</wa-tab>
+
+      <wa-tab-panel name="boys">
+        <div id="usa_swimming_time_standards_single_age_scy_boys">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='single_age' AND course='scy' AND gender='boys'"),standard_type: "single_age")) %>
+        </div>
+      </wa-tab-panel>
+      
+      <wa-tab-panel name="girls">
+        <div id="usa_swimming_time_standards_single_age_scy_girls">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='single_age' AND course='scy' AND gender='girls'"),standard_type: "single_age")) %>
+        </div>
+      </wa-tab-panel>
+    </wa-tab-group>
+  </wa-tab-panel>
+
+  <wa-tab-panel name="single_age_scm">
+    <wa-tab-group placement="start">
+      <wa-tab panel="boys">Boys</wa-tab>
+      <wa-tab panel="girls">Girls</wa-tab>
+
+      <wa-tab-panel name="boys">
+        <div id="usa_swimming_time_standards_single_age_scm_boys">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='single_age' AND course='scm' AND gender='boys'"),standard_type: "single_age")) %>
+        </div>
+      </wa-tab-panel>
+      
+      <wa-tab-panel name="girls">
+        <div id="usa_swimming_time_standards_single_age_scm_girls">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='single_age' AND course='scm' AND gender='girls'"),standard_type: "single_age")) %>
+        </div>
+      </wa-tab-panel>
+    </wa-tab-group>
+  </wa-tab-panel>
+
+   <wa-tab-panel name="single_age_lcm">
+    <wa-tab-group placement="start">
+      <wa-tab panel="boys">Boys</wa-tab>
+      <wa-tab panel="girls">Girls</wa-tab>
+
+      <wa-tab-panel name="boys">
+        <div id="usa_swimming_time_standards_single_age_lcm_boys">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='single_age' AND course='lcm' AND gender='boys'"),standard_type: "single_age")) %>
+        </div>
+      </wa-tab-panel>
+      
+      <wa-tab-panel name="girls">
+        <div id="usa_swimming_time_standards_single_age_lcm_girls">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='single_age' AND course='lcm' AND gender='girls'"),standard_type: "single_age")) %>
+        </div>
+      </wa-tab-panel>
+    </wa-tab-group>
+  </wa-tab-panel>
+ 
+  <wa-tab-panel name="age_group_scy">
+    <wa-tab-group placement="start">
+      <wa-tab panel="boys">Boys</wa-tab>
+      <wa-tab panel="girls">Girls</wa-tab>
+
+      <wa-tab-panel name="boys">
+        <div id="usa_swimming_time_standards_age_group_scy_boys">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='age_group' AND course='scy' AND gender='boys'"),standard_type: "age_group")) %>
+        </div>
+      </wa-tab-panel>
+      
+      <wa-tab-panel name="girls">
+        <div id="usa_swimming_time_standards_age_group_scy_girls">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='age_group' AND course='scy' AND gender='girls'"),standard_type: "age_group")) %>
+        </div>
+      </wa-tab-panel>
+    </wa-tab-group>
+  </wa-tab-panel>
+
+  <wa-tab-panel name="age_group_scm">
+    <wa-tab-group placement="start">
+      <wa-tab panel="boys">Boys</wa-tab>
+      <wa-tab panel="girls">Girls</wa-tab>
+
+      <wa-tab-panel name="boys">
+        <div id="usa_swimming_time_standards_age_group_scm_boys">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='age_group' AND course='scm' AND gender='boys'"),standard_type: "age_group")) %>
+        </div>
+      </wa-tab-panel>
+      
+      <wa-tab-panel name="girls">
+        <div id="usa_swimming_time_standards_age_group_scm_girls">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='age_group' AND course='scm' AND gender='girls'"),standard_type: "age_group")) %>
+        </div>
+      </wa-tab-panel>
+    </wa-tab-group>
+  </wa-tab-panel>
+
+  <wa-tab-panel name="age_group_lcm">
+    <wa-tab-group placement="start">
+      <wa-tab panel="boys">Boys</wa-tab>
+      <wa-tab panel="girls">Girls</wa-tab>
+
+      <wa-tab-panel name="boys">
+        <div id="usa_swimming_time_standards_age_group_lcm_boys">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='age_group' AND course='lcm' AND gender='boys'"),standard_type: "age_group")) %>
+        </div>
+      </wa-tab-panel>
+      
+      <wa-tab-panel name="girls">
+        <div id="usa_swimming_time_standards_age_group_lcm_girls">
+          <%= render(StandardsTableComponent.new(standards: @usa_swimming_time_standards.where("standard_type='age_group' AND course='lcm' AND gender='girls'"),standard_type: "age_group")) %>
+        </div>
+      </wa-tab-panel>
+    </wa-tab-group>
+  </wa-tab-panel>
+
+</wa-tab-group>
+
+<p>
+<%= link_to "New usa swimming time standard", new_usa_swimming_time_standard_path %>

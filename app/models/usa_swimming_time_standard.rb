@@ -1,0 +1,2 @@
+class UsaSwimmingTimeStandard < ApplicationRecord
+end

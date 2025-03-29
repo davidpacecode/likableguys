@@ -1,37 +1,37 @@
 <div id="<%= dom_id swim_meet %>">
-  <p>
-    <strong>Name:</strong>
-    <%= swim_meet.name %>
-  </p>
+  
+  <div class="wa-stack wa-gap-2xl">
+    <h4><%= swim_meet.name %></h4>
+    <p>
+      <strong>Location:</strong>
+      <%= swim_meet.location %>
+    </p>
+    <p>
+      <strong>Address:</strong>
+      <%= swim_meet.address %>
+    </p>
+    <p>
+      <strong>Start date:</strong>
+      <%= swim_meet.start_date.strftime("%d-%b-%Y") %>
+    </p>
+    <p>
+      <strong>End date:</strong>
+      <%= swim_meet.end_date.strftime("%d-%b-%Y") %>
+    </p>
+    <p>
+      <strong>Description:</strong>
+      <%= swim_meet.description %>
+    </p>
+    <p>
+      <%= link_to "Official Meet Information", swim_meet.url %>
+    </p>
+    <p></p>
+  </div>
 
-  <p>
-    <strong>Location:</strong>
-    <%= swim_meet.location %>
-  </p>
 
-  <p>
-    <strong>Address:</strong>
-    <%= swim_meet.address %>
-  </p>
 
-  <p>
-    <strong>Url:</strong>
-    <%= swim_meet.url %>
-  </p>
 
-  <p>
-    <strong>Start date:</strong>
-    <%= swim_meet.start_date %>
-  </p>
 
-  <p>
-    <strong>End date:</strong>
-    <%= swim_meet.end_date %>
-  </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= swim_meet.description %>
-  </p>
 
 </div>

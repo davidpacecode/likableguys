@@ -29,6 +29,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <wa-page>
+      <header slot="header" class="wa-split wa-size-l">
+        <div class="wa-cluster">
+          <wa-icon name="swimmer" style="color: #4a90e2;"></wa-icon>
+          <h4>Likableguys.com, but only the swimming stuff for now...</h4>
+       </div>
+      </header>
+      
+      <main class="wa-body-l">
+        <%= yield %>
+      </main> 
+      <footer slot="footer">
+        <div class="wa-size-l">
+          Made with <wa-icon name="heart" style="color: #FF0000;"></wa-icon> by the Likableguys
+        </div>
+      </footer>
+    </wa-page>
   </body>
 </html>

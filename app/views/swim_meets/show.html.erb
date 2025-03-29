@@ -2,9 +2,46 @@
 
 <%= render @swim_meet %>
 
+<div class="wa-stack wa-gap-2xl">
+  <h4>Races</h4>
+  <% if @races.any? %>
+    <table>
+      <thead>
+        <tr>
+          <th>Event Number</th>
+          <th>Event</th>
+          <th>Heat</th>
+          <th>Lane</th>
+          <th>Seed Time</th>
+          <th>Final Time</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @races.each do |race| %>
+          <tr>
+            <td><%= race.event_no %></td>
+            <td><%= race.event.upcase%></td>
+            <td><%= race.heat %></td>
+            <td><%= race.lane %></td>
+            <td><%= race.seed_time %></td>
+            <td><%= race.final_time %></td>
+            <td><%= link_to "Edit", edit_race_path(race) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% else %>
+    <p>No races have been added to this meet yet.</p>
+  <% end %>
+</div>
+<p></p>
+
+<!--
 <div>
   <%= link_to "Edit this swim meet", edit_swim_meet_path(@swim_meet) %> |
   <%= link_to "Back to swim meets", swim_meets_path %>
 
   <%= button_to "Destroy this swim meet", @swim_meet, method: :delete %>
 </div>
+-->

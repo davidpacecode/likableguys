@@ -1,15 +1,15 @@
 class MotivationalGradeComponent < ViewComponent::Base
-  def initialize (standard_type:, race:, age:, gender:, final_time:)
+  def initialize (standard_type:, race:, age:, gender:, time:)
     @standard_type = standard_type
     @race = race
     @age = age
     @gender = gender
-    @final_time = final_time
-    @grade = MotivationalGradeCalculator.calculate(standard_type, race, age, gender, final_time)
+    @time = time
+    @grade = MotivationalGradeCalculator.calculate(standard_type, race, age, gender, time)
   end
 
   def variant
-    case @grade
+    case
     when "AAAA", "AAA", "AA", "A"
       "success"
     when "BB", "B"

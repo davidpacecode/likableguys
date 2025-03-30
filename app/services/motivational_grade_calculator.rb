@@ -1,5 +1,6 @@
 class MotivationalGradeCalculator
-  def self.calculate(standard_type, race, age, gender, final_time)
+  def self.calculate(standard_type, race, age, gender, time)
+    return nil unless time
     age_group = standard_type == "single_age" ? nil : age_group_for(age)
     standards = UsaSwimmingTimeStandard.where(
       standard_type: standard_type.to_s.downcase,
@@ -11,17 +12,17 @@ class MotivationalGradeCalculator
 
     return nil unless standards
 
-    if final_time <= standards.aaaa
+    if time <= standards.aaaa
       "AAAA"
-    elsif  final_time <= standards.aaa
+    elsif  time <= standards.aaa
       "AAA"
-    elsif  final_time <= standards.aa
+    elsif  time <= standards.aa
       "AA"
-    elsif  final_time <= standards.a
+    elsif  time <= standards.a
       "A"
-    elsif  final_time <= standards.bb
+    elsif  time <= standards.bb
       "BB"
-    elsif  final_time <= standards.b
+    elsif  time <= standards.b
       "B"
     else
      "C"

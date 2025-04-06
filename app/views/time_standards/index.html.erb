@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Time standards" %>
+
+<h1>Time standards</h1>
+
+<div id="time_standards">
+  <% @time_standards.each do |time_standard| %>
+    <%= render time_standard %>
+    <p>
+      <%= link_to "Show this time standard", time_standard %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New time standard", new_time_standard_path %>

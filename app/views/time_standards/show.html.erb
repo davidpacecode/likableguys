@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @time_standard %>
+
+<div>
+  <%= link_to "Edit this time standard", edit_time_standard_path(@time_standard) %> |
+  <%= link_to "Back to time standards", time_standards_path %>
+
+  <%= button_to "Destroy this time standard", @time_standard, method: :delete %>
+</div>

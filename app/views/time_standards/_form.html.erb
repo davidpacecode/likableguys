@@ -1,0 +1,87 @@
+<%= form_with(model: time_standard) do |form| %>
+  <% if time_standard.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(time_standard.errors.count, "error") %> prohibited this time_standard from being saved:</h2>
+
+      <ul>
+        <% time_standard.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :standard_type, style: "display: block" %>
+    <%= form.text_field :standard_type %>
+  </div>
+
+  <div>
+    <%= form.label :age_group, style: "display: block" %>
+    <%= form.text_field :age_group %>
+  </div>
+
+  <div>
+    <%= form.label :age, style: "display: block" %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div>
+    <%= form.label :gender, style: "display: block" %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div>
+    <%= form.label :distance, style: "display: block" %>
+    <%= form.number_field :distance %>
+  </div>
+
+  <div>
+    <%= form.label :stroke, style: "display: block" %>
+    <%= form.text_field :stroke %>
+  </div>
+
+  <div>
+    <%= form.label :sort_order, style: "display: block" %>
+    <%= form.number_field :sort_order %>
+  </div>
+
+  <div>
+    <%= form.label :course, style: "display: block" %>
+    <%= form.text_field :course %>
+  </div>
+
+  <div>
+    <%= form.label :b, style: "display: block" %>
+    <%= form.text_field :b %>
+  </div>
+
+  <div>
+    <%= form.label :bb, style: "display: block" %>
+    <%= form.text_field :bb %>
+  </div>
+
+  <div>
+    <%= form.label :a, style: "display: block" %>
+    <%= form.text_field :a %>
+  </div>
+
+  <div>
+    <%= form.label :aa, style: "display: block" %>
+    <%= form.text_field :aa %>
+  </div>
+
+  <div>
+    <%= form.label :aaa, style: "display: block" %>
+    <%= form.text_field :aaa %>
+  </div>
+
+  <div>
+    <%= form.label :aaaa, style: "display: block" %>
+    <%= form.text_field :aaaa %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  standard_type: MyString
+  age_group: MyString
+  age: 1
+  gender: MyString
+  distance: 1
+  stroke: MyString
+  sort_order: 1
+  course: MyString
+  b: 9.99
+  bb: 9.99
+  a: 9.99
+  aa: 9.99
+  aaa: 9.99
+  aaaa: 9.99
+
+two:
+  standard_type: MyString
+  age_group: MyString
+  age: 1
+  gender: MyString
+  distance: 1
+  stroke: MyString
+  sort_order: 1
+  course: MyString
+  b: 9.99
+  bb: 9.99
+  a: 9.99
+  aa: 9.99
+  aaa: 9.99
+  aaaa: 9.99

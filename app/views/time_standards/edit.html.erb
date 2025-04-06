@@ -1,0 +1,12 @@
+<% content_for :title, "Editing time standard" %>
+
+<h1>Editing time standard</h1>
+
+<%= render "form", time_standard: @time_standard %>
+
+<br>
+
+<div>
+  <%= link_to "Show this time standard", @time_standard %> |
+  <%= link_to "Back to time standards", time_standards_path %>
+</div>

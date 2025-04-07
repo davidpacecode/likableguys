@@ -4,6 +4,42 @@
 
 <h1>Time standards</h1>
 
+<wa-tab-group>
+  <wa-tab panel="single_age_scy">Single Age SCY</wa-tab>
+  <wa-tab panel="single_age_scm">Singe Age SCM</wa-tab>
+  <wa-tab panel="single_age_lcm">Single Age LCM</wa-tab>
+  <wa-tab panel="age_group_scy">Age Group SCY</wa-tab>
+  <wa-tab panel="age_group_scm">Age Group SCM</wa-tab>
+  <wa-tab panel="age_group_lcm">Age Group LCM</wa-tab>
+
+  <wa-tab-panel name="single_age_scy">
+
+    <wa-tab-group placement="start">
+      <wa-tab panel="boys">Boys</wa-tab>
+      <wa-tab panel="girls">Girls</wa-tab>
+
+      <wa-tab-panel name="boys">
+        Boys stuff goes here
+      </wa-tab-panel>
+
+      <wa-tab-panel name="girls">
+        Girls stuff goes here
+      </wa-tab-panel>
+    </wa-tab-group>
+
+  </wa-tab-panel>
+
+
+
+
+
+  <wa-tab-panel name="custom">This is the custom tab panel.</wa-tab-panel>
+  <wa-tab-panel name="advanced">This is the advanced tab panel.</wa-tab-panel>
+  <wa-tab-panel name="disabled">This is a disabled tab panel.</wa-tab-panel>
+</wa-tab-group>
+
+<% if false %>
+
 <div id="time_standards">
   <% @time_standards.each do |time_standard| %>
     <%= render time_standard %>
@@ -14,3 +50,5 @@
 </div>
 
 <%= link_to "New time standard", new_time_standard_path %>
+
+<% end %>

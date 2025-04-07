@@ -28,6 +28,38 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <wa-page mobile-breakpoint="920">
+
+      <header slot="header" class="wa-split">
+        <div class="wa-cluster wa-align-items-center wa-size-l">
+          <a href="#"><wa-icon name="swimmer" style="color: #0000FF"></wa-icon></a>
+          <a href="#">CMC's best times</a>
+          <a href="#">All swim meets</a>
+          <a href="#">Motivational times browser</a>
+          <a href="#">Swim grade calculator</a>
+        </div>
+      </header>
+
+       <nav slot="navigation">
+        <a href="#who_we_are">Who we are</a>
+        <a href="#current_meet">Current meet</a>
+      </nav>
+
+      <main class="wa-body-l">
+        <%= yield %>
+      </main>
+
+
+      <footer slot="footer">
+        <div class="wa-size-l">
+          Made with <wa-icon name="heart" style="color: #FF0000;"></wa-icon> by the Likableguys
+        </div>
+      </footer>
+
+    </wa-page>
+
+
+
   </body>
 </html>

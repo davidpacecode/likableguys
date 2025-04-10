@@ -1,0 +1,31 @@
+<table>
+  <thead>
+    <tr>
+      <th> <%= @standard_type == "single_age" ? "Age" : "Age Group" %> </th>
+      <th>Event</th>
+      <th>B</th>
+      <th>BB</th>
+      <th>A</th>
+      <th>AA</th>
+      <th>AAA</th>
+      <th>AAAA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @time_standards.where("standard_type = ? and course = ? and gender = ?", @standard_type, @course, @gender).each do |s| %>
+      <tr>
+        <th> <%= @standard_type == "single_age" ? s.age : s.age_group %> </th>
+        <th> <%= "#{s.distance.to_s} #{s.stroke.upcase}" %> </th>
+        <th> <%= s.b %></th>
+        <th> <%= s.bb %></th>
+        <th> <%= s.a %></th>
+        <th> <%= s.aa %></th>
+        <th> <%= s.aaa %></th>
+        <th> <%= s.aaaa %></th>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+      
+
+

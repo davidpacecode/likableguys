@@ -1,4 +1,4 @@
-class TabGroupComponent < ViewComponent::Base
+class TimeStandardTabGroupComponent < ViewComponent::Base
   def initialize(standard_type:, course:, time_standards:)
     @standard_type = standard_type
     @course = course

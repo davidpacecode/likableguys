@@ -1,0 +1,13 @@
+  <wa-tab-group placement="start">
+    <wa-tab panel="boys">Boys</wa-tab>
+    <wa-tab panel="girls">Girls</wa-tab>
+
+    <wa-tab-panel name="boys">
+      <%= render(TimeStandardTableComponent.new(standard_type: @standard_type, course: @course, gender: "boys", time_standards: @time_standards)) %>
+    </wa-tab-panel>
+
+    <wa-tab-panel name="girls">
+      <%= render(TimeStandardTableComponent.new(standard_type: @standard_type, course: @course, gender: "girls", time_standards: @time_standards)) %>
+    </wa-tab-panel>
+  </wa-tab-group>
+

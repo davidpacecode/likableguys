@@ -16,12 +16,12 @@
       <tr>
         <th> <%= @standard_type == "single_age" ? s.age : s.age_group %> </th>
         <th> <%= "#{s.distance.to_s} #{s.stroke.upcase}" %> </th>
-        <th> <%= s.b %></th>
-        <th> <%= s.bb %></th>
-        <th> <%= s.a %></th>
-        <th> <%= s.aa %></th>
-        <th> <%= s.aaa %></th>
-        <th> <%= s.aaaa %></th>
+        <th> <%= helpers.format_time_standard(s.b) %></th>
+        <th> <%= helpers.format_time_standard(s.bb) %></th>
+        <th> <%= helpers.format_time_standard(s.a) %></th>
+        <th> <%= helpers.format_time_standard(s.aa) %></th>
+        <th> <%= helpers.format_time_standard(s.aaa) %></th>
+        <th> <%= helpers.format_time_standard(s.aaaa) %></th>
       </tr>
     <% end %>
   </tbody>

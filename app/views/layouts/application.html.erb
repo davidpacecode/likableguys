@@ -41,9 +41,11 @@
         </div>
       </header>
 
-      <nav slot="navigation">
-        <%= render 'shared/navigation' %>
-      </nav>
+      <% if false %>
+        <nav slot="navigation">
+          <%= render 'shared/navigation' %>
+        </nav>
+      <% end %>
 
       <main class="wa-body-l">
         <%= yield %>

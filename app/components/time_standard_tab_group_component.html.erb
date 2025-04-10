@@ -3,11 +3,27 @@
     <wa-tab panel="girls">Girls</wa-tab>
 
     <wa-tab-panel name="boys">
-      <%= render(TimeStandardTableComponent.new(standard_type: @standard_type, course: @course, gender: "boys", time_standards: @time_standards)) %>
+      <% if @standard_type == "single_age" %>
+        <% (10..18).each do |n| %>
+          <%= render(TimeStandardTableComponent.new(standard_type: @standard_type, course: @course, gender: "boys", time_standards: @time_standards.where("age = ?", n))) %>
+        <% end %>
+      <% else %>
+        <% ["10 & under", "11-12", "13-14", "15-16", "17-18"].each do |ag| %>
+          <%= render(TimeStandardTableComponent.new(standard_type: @standard_type, course: @course, gender: "boys", time_standards: @time_standards.where("age_group = ?", ag))) %>
+        <% end %>
+      <% end %>
     </wa-tab-panel>
 
     <wa-tab-panel name="girls">
-      <%= render(TimeStandardTableComponent.new(standard_type: @standard_type, course: @course, gender: "girls", time_standards: @time_standards)) %>
+      <% if @standard_type == "single_age" %>
+        <% (10..18).each do |n| %>
+          <%= render(TimeStandardTableComponent.new(standard_type: @standard_type, course: @course, gender: "girls", time_standards: @time_standards.where("age = ?", n))) %>
+        <% end %>
+      <% else %>
+        <% ["10 & under", "11-12", "13-14", "15-16", "17-18"].each do |ag| %>
+          <%= render(TimeStandardTableComponent.new(standard_type: @standard_type, course: @course, gender: "girls", time_standards: @time_standards.where("age_group = ?", ag))) %>
+        <% end %>
+      <% end %>
     </wa-tab-panel>
   </wa-tab-group>
 

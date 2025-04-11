@@ -56,6 +56,11 @@
     <%= form.date_field :race_date %>
   </div>
 
+  <div class="field">
+    <%= form.label :dq, "Disqualified?" %>
+    <%= form.check_box :dq %>
+  </div>
+
   <div>
     <%= form.label :swim_meet_id, style: "display: block" %>
     <%= form.text_field :swim_meet_id %>

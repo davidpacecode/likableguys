@@ -1,6 +1,6 @@
 class SwimMeet < ApplicationRecord
   has_rich_text :description
-  has_many :races, dependant: destroy
+  has_many :races, dependent: :destroy
 
   validates :venue, presence: true
   validates :start_date, presence: true

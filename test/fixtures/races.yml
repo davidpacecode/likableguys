@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  distance: 1
+  stroke: MyString
+  event_no: 1
+  heat: 1
+  lane: 1
+  seed_time: 9.99
+  final_time: 9.99
+  place: 1
+  race_date: 2025-04-10
+  swim_meet: one
+
+two:
+  distance: 1
+  stroke: MyString
+  event_no: 1
+  heat: 1
+  lane: 1
+  seed_time: 9.99
+  final_time: 9.99
+  place: 1
+  race_date: 2025-04-10
+  swim_meet: two

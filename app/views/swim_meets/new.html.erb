@@ -1,0 +1,11 @@
+<% content_for :title, "New swim meet" %>
+
+<h1>New swim meet</h1>
+
+<%= render "form", swim_meet: @swim_meet %>
+
+<br>
+
+<div>
+  <%= link_to "Back to swim meets", swim_meets_path %>
+</div>

@@ -1,0 +1,67 @@
+<%= form_with(model: race) do |form| %>
+  <% if race.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(race.errors.count, "error") %> prohibited this race from being saved:</h2>
+
+      <ul>
+        <% race.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :distance, style: "display: block" %>
+    <%= form.number_field :distance %>
+  </div>
+
+  <div>
+    <%= form.label :stroke, style: "display: block" %>
+    <%= form.text_field :stroke %>
+  </div>
+
+  <div>
+    <%= form.label :event_no, style: "display: block" %>
+    <%= form.number_field :event_no %>
+  </div>
+
+  <div>
+    <%= form.label :heat, style: "display: block" %>
+    <%= form.number_field :heat %>
+  </div>
+
+  <div>
+    <%= form.label :lane, style: "display: block" %>
+    <%= form.number_field :lane %>
+  </div>
+
+  <div>
+    <%= form.label :seed_time, style: "display: block" %>
+    <%= form.text_field :seed_time %>
+  </div>
+
+  <div>
+    <%= form.label :final_time, style: "display: block" %>
+    <%= form.text_field :final_time %>
+  </div>
+
+  <div>
+    <%= form.label :place, style: "display: block" %>
+    <%= form.number_field :place %>
+  </div>
+
+  <div>
+    <%= form.label :race_date, style: "display: block" %>
+    <%= form.date_field :race_date %>
+  </div>
+
+  <div>
+    <%= form.label :swim_meet_id, style: "display: block" %>
+    <%= form.text_field :swim_meet_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

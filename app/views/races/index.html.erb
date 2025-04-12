@@ -5,12 +5,22 @@
 <h1>Races</h1>
 
 <div id="races">
-  <% @races.each do |race| %>
-    <%= render race %>
-    <p>
-      <%= link_to "Show this race", race %>
-    </p>
-  <% end %>
+  <ul>
+    <% @races.each do |race| %>
+      <li> <%= link_to "#{race.race_date.to_s} #{race.distance.to_s} #{race.stroke.upcase}", race %> </li>
+    <% end %>
+  </ul>
 </div>
+
+<% if false %>
+  <div id="races">
+    <% @races.each do |race| %>
+      <%= render race %>
+      <p>
+        <%= link_to "Show this race", race %>
+      </p>
+    <% end %>
+  </div>
+<% end %>
 
 <%= link_to "New race", new_race_path %>

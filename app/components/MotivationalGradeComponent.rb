@@ -4,13 +4,13 @@ class MotivationalGradeComponent < ViewComponent::Base
     @race = race
     @age = age
     @gender = gender
-    @course = course,
+    @course = course
     @time = time
     @grade = MotivationalGradeCalculator.calculate(standard_type, race, age, gender, course, time)
   end
 
   def variant
-    case
+    case @grade
     when "AAAA", "AAA", "AA", "A"
       "success"
     when "BB", "B"

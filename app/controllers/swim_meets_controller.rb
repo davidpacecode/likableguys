@@ -60,7 +60,7 @@ class SwimMeetsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_swim_meet
-      @swim_meet = SwimMeet.find(params.expect(:id))
+      @swim_meet = SwimMeet.includes(:races).find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.

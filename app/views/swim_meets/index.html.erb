@@ -4,13 +4,25 @@
 
 <h1>Swim meets</h1>
 
-<div id="swim_meets">
-  <% @swim_meets.each do |swim_meet| %>
-    <%= render swim_meet %>
-    <p>
-      <%= link_to "Show this swim meet", swim_meet %>
-    </p>
-  <% end %>
-</div>
+  <div id="swim_meets">
+    <ul>
+      <% @swim_meets.each do |swim_meet| %>
+        <li> <%= link_to "#{swim_meet.start_date.to_fs(:long)} #{swim_meet.name} #{swim_meet.venue}", swim_meet %>
+    <% end %>
+    </ul>
+  </div>
+
+
+<%# this is the originally generated code %>
+<% if false %>
+  <div id="swim_meets">
+    <% @swim_meets.each do |swim_meet| %>
+      <%= render swim_meet %>
+      <p>
+        <%= link_to "Show this swim meet", swim_meet %>
+      </p>
+    <% end %>
+  </div>
+<% end %>
 
 <%= link_to "New swim meet", new_swim_meet_path %>

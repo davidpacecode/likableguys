@@ -27,15 +27,9 @@
             <td><%= race.heat %></td>
             <td><%= race.lane %></td>
             <td><%= format_time_standard(race.seed_time) %></td>
-            <% if false %>
-              <td><%= render MotivationalGradeComponent.new(standard_type: "single_age", race: race, age: 13, gender: "boys", time: race.seed_time) %></td>
-            <% end %>
-            <td>Coming soon...</td>
+            <td><%= render MotivationalGradeComponent.new(standard_type: "single_age", race: race, age: 13, gender: "boys", course: @swim_meet.course, time: race.seed_time) %></td>
             <td><%= format_time_standard(race.final_time) %></td>
-            <% if false %>
-              <td><%= render MotivationalGradeComponent.new(standard_type: "single_age", race: race, age: 13, gender: "boys", time: race.final_time) %></td>
-            <% end %>
-            <td>Coming soon...</td>
+            <td><%= render MotivationalGradeComponent.new(standard_type: "single_age", race: race, age: 13, gender: "boys", course: @swim_meet.course, time: race.final_time) %></td>
             <td><%= link_to "Edit", edit_race_path(race) %></td>
           </tr>
         <% end %>

@@ -8,28 +8,22 @@
     <table>
       <thead>
         <tr>
-          <th>Event Number</th>
           <th>Event</th>
-          <th>Heat</th>
-          <th>Lane</th>
-          <th>Seed Time</th>
-          <th>Seed Grade</th>
-          <th>Final Time</th>
-          <th>Final Grade</th>
+          <th>Seed Time (single age, age group)</th>
+          <th>Final Time (single age, age group)</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
         <% @swim_meet.races.each do |race| %>
           <tr>
-            <td><%= race.event_no %></td>
             <td><%= "#{race.distance} #{race.stroke.upcase}"%></td>
-            <td><%= race.heat %></td>
-            <td><%= race.lane %></td>
-            <td><%= format_time_standard(race.seed_time) %></td>
-            <td><%= render MotivationalGradeComponent.new(standard_type: "single_age", race: race, age: 13, gender: "boys", course: @swim_meet.course, time: race.seed_time) %></td>
-            <td><%= format_time_standard(race.final_time) %></td>
-            <td><%= render MotivationalGradeComponent.new(standard_type: "single_age", race: race, age: 13, gender: "boys", course: @swim_meet.course, time: race.final_time) %></td>
+            <td><%= format_time_standard(race.seed_time) %>
+              <%= render MotivationalGradeComponent.new(standard_type: "single_age", race: race, age: 13, gender: "boys", course: @swim_meet.course, time: race.seed_time) %>
+              <%= render MotivationalGradeComponent.new(standard_type: "age_group", race: race, age: 13, gender: "boys", course: @swim_meet.course, time: race.seed_time) %> </td>
+            <td><%= format_time_standard(race.final_time) %>
+              <%= render MotivationalGradeComponent.new(standard_type: "single_age", race: race, age: 13, gender: "boys", course: @swim_meet.course, time: race.final_time) %>
+              <%= render MotivationalGradeComponent.new(standard_type: "age_group", race: race, age: 13, gender: "boys", course: @swim_meet.course, time: race.final_time) %> </td>
             <td><%= link_to "Edit", edit_race_path(race) %></td>
           </tr>
         <% end %>

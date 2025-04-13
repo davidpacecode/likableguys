@@ -2,14 +2,27 @@ class MotivationalGradeCalculator
   def self.calculate(standard_type, race, age, gender, course, time)
     return nil unless time
     age_group = standard_type == "single_age" ? nil : age_group_for(age)
-    standards = TimeStandard.where(
-      standard_type: standard_type.to_s.downcase,
-      distance: race.distance,
-      stroke: race.stroke.to_s.downcase,
-      course: course,
-      age: age.to_i,
-      gender: gender.to_s.downcase
-    ).first
+
+    if standard_type == "single_age"
+      standards = TimeStandard.where(
+        standard_type: standard_type.to_s.downcase,
+        distance: race.distance,
+        stroke: race.stroke.to_s.downcase,
+        course: course,
+        age: age.to_i,
+        gender: gender.to_s.downcase
+      ).first
+    else
+      standards = TimeStandard.where(
+        standard_type: standard_type.to_s.downcase,
+        distance: race.distance,
+        stroke: race.stroke.to_s.downcase,
+        course: course,
+        age_group: age_group,
+        gender: gender.to_s.downcase
+      ).first
+
+    end
 
     return nil unless standards
 

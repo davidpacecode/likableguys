@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  age_group: MyString
+  gender: MyString
+  distance: 1
+  stroke: MyString
+  course: MyString
+  tags_time: 9.99
+  bonus_time: 9.99
+
+two:
+  age_group: MyString
+  gender: MyString
+  distance: 1
+  stroke: MyString
+  course: MyString
+  tags_time: 9.99
+  bonus_time: 9.99

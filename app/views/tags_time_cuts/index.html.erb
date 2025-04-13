@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Tags time cuts" %>
+
+<h1>Tags time cuts</h1>
+
+<div id="tags_time_cuts">
+  <% @tags_time_cuts.each do |tags_time_cut| %>
+    <%= render tags_time_cut %>
+    <p>
+      <%= link_to "Show this tags time cut", tags_time_cut %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tags time cut", new_tags_time_cut_path %>

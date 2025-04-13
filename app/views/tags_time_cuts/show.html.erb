@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @tags_time_cut %>
+
+<div>
+  <%= link_to "Edit this tags time cut", edit_tags_time_cut_path(@tags_time_cut) %> |
+  <%= link_to "Back to tags time cuts", tags_time_cuts_path %>
+
+  <%= button_to "Destroy this tags time cut", @tags_time_cut, method: :delete %>
+</div>

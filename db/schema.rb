@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_11_035400) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_13_210846) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
@@ -73,6 +73,18 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_11_035400) do
     t.date "start_date"
     t.date "end_date"
     t.string "course"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tags_time_cuts", force: :cascade do |t|
+    t.string "age_group"
+    t.string "gender"
+    t.integer "distance"
+    t.string "stroke"
+    t.string "course"
+    t.decimal "tags_time"
+    t.decimal "bonus_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

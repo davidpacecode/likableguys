@@ -1,0 +1,2 @@
+class TagsTimeCut < ApplicationRecord
+end

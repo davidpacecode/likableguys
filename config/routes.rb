@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tags_time_cuts
   resources :races
   resources :swim_meets
   resources :time_standards

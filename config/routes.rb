@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   resources :tags_time_cuts
-  resources :races
+  resources :races do
+    collection do
+      get :best_times
+    end
+  end
   resources :swim_meets
   resources :time_standards
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

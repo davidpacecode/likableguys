@@ -57,6 +57,11 @@ class RacesController < ApplicationController
     end
   end
 
+  def best_times
+    @distinct_races = Race.joins(:swim_meet).select("swim_meets.course", "races.distance", "races.stroke").distinct.to_a
+    @races = Race.joins(:swim_meet)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_race

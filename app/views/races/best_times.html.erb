@@ -1,0 +1,5 @@
+<% @distinct_races.each do |dr| %>
+  <%= "#{dr.course} #{dr.distance} #{dr.stroke.upcase}" %>
+  <%= format_time_standard(@races.where("swim_meets.course = ? and races.distance = ? and races.stroke = ?", dr.course, dr.distance, dr.stroke).minimum("races.final_time")) %>
+  <%= tag.br %>
+<% end %>

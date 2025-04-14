@@ -58,7 +58,7 @@ class RacesController < ApplicationController
   end
 
   def best_times
-    @distinct_races = Race.joins(:swim_meet).select("swim_meets.course", "races.distance", "races.stroke").distinct.to_a
+    @distinct_races = Race.joins(:swim_meet).select("swim_meets.course", "races.distance", "races.stroke").distinct.order("swim_meets.course", "races.stroke", "races.distance").to_a
     @races = Race.joins(:swim_meet)
   end
 

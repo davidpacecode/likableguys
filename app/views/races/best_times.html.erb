@@ -1,6 +1,28 @@
+<h1>The CMC's Best Times</h1>
 
-<% @best_races.each do |br| %>
-  <%= "#{br.course} #{br.distance} #{br.stroke.upcase} #{format_time_standard(br.final_time)} #{br.race_date.to_fs(:long)}" %>
-  <%= tag.br %>
-<% end %>
+<table>
+  <thead>
+    <tr>
+      <td>Course</td>
+      <td>Event</td>
+      <td>Date</td>
+      <td>Time</td>
+      <td>Single Age</td>
+      <td>Age Group</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @best_races.each do |br| %>
+      <tr>
+        <td><%= br.course.upcase %></td>
+        <td><%= "#{br.distance} #{br.stroke.upcase}" %></td>
+        <td><%= br.race_date.to_fs(:long) %></td>
+        <td><%= format_time_standard(br.final_time) %></td>
+        <td><%= render MotivationalGradeComponent.new(standard_type: "single_age", race: br, age: 13, gender: "boys", course: br.course, time: br.final_time) %> </td>
+        <td><%= render MotivationalGradeComponent.new(standard_type: "age_group", race: br, age: 13, gender: "boys", course: br.course, time: br.final_time) %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
 

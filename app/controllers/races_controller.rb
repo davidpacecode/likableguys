@@ -58,8 +58,10 @@ class RacesController < ApplicationController
   end
 
   def best_times
-    @distinct_races = Race.joins(:swim_meet).select("swim_meets.course", "races.distance", "races.stroke").distinct.order("swim_meets.course", "races.stroke", "races.distance").to_a
-    @races = Race.joins(:swim_meet)
+    @best_races = Race.joins(:swim_meet)
+      .select("swim_meets.course", "races.distance", "races.stroke", "races.final_time", "races.race_date")
+      .group("swim_meets.course", "races.distance", "races.stroke")
+      .having("min(final_time)")
   end
 
   private

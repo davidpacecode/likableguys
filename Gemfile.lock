@@ -163,6 +163,11 @@ GEM
       net-pop
       net-smtp
     marcel (1.0.4)
+    markdown-rails (2.1.0)
+      actionview (>= 6.0.0)
+      activesupport (>= 6.0.0)
+      railties (>= 6.0.0)
+      redcarpet (>= 3.0.0)
     matrix (0.4.2)
     method_source (1.1.0)
     mime-types (3.6.2)
@@ -267,6 +272,7 @@ GEM
     rake (13.2.1)
     rdoc (6.13.1)
       psych (>= 4.0.0)
+    redcarpet (3.6.1)
     regexp_parser (2.10.0)
     reline (0.6.1)
       io-console (~> 0.5)
@@ -415,6 +421,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
+  markdown-rails (~> 2.1)
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.2)

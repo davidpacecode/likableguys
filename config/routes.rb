@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  sitepress_pages
+  sitepress_root
   resources :tags_time_cuts
   resources :races do
     collection do
@@ -19,5 +21,4 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  root "swim_meets#index"
 end

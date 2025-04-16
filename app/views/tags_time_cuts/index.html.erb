@@ -5,12 +5,42 @@
 <h1>Tags time cuts</h1>
 
 <div id="tags_time_cuts">
-  <% @tags_time_cuts.each do |tags_time_cut| %>
-    <%= render tags_time_cut %>
-    <p>
-      <%= link_to "Show this tags time cut", tags_time_cut %>
-    </p>
-  <% end %>
+  <table>
+    <thead>
+      <tr>
+        <td>Age Group</td>
+        <td>Gender</td>
+        <td>Event</td>
+        <td>Course</td>
+        <td>Tags Time</td>
+        <td>Bonus Time</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% @tags_time_cuts.each do |tags_time_cut| %>
+        <tr>
+          <td><%= tags_time_cut.age_group %></td>
+          <td><%= tags_time_cut.gender %></td>
+          <td><%= "#{tags_time_cut.distance.to_s} #{tags_time_cut.stroke.upcase}" %></td>
+          <td><%= tags_time_cut.course.upcase %></td>
+          <td><%= tags_time_cut.tags_time %></td>
+          <td><%= tags_time_cut.bonus_time %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 </div>
 
+<% if false %>
+  <div id="tags_time_cuts">
+    <% @tags_time_cuts.each do |tags_time_cut| %>
+      <%= render tags_time_cut %>
+      <p>
+        <%= link_to "Show this tags time cut", tags_time_cut %>
+      </p>
+    <% end %>
+  </div>
+<% end %>
+
+<%= tag.br %>
 <%= link_to "New tags time cut", new_tags_time_cut_path %>

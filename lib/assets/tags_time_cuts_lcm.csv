@@ -1,4 +1,4 @@
-age_group,gender,distance,stroke,course,tags_time,bonus_time
+age_group,gender,distance,stroke,sort_order,course,tags_time,bonus_time
 13-14,girls,50,fr,1,lcm,28.99,29.49
 13-14,girls,100,fr,1,lcm,61.89,62.39
 13-14,girls,200,fr,1,lcm,134.09,134.59

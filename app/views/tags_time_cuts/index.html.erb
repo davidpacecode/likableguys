@@ -4,6 +4,12 @@
 
 <h1>Tags time cuts</h1>
 
+  <%= render(TagsTimeCutTabGroupComponent.new(gender: "boys", tags_time_cuts: @tags_time_cuts)) %>
+  <%= render(TagsTimeCutTabGroupComponent.new(gender: "girls", tags_time_cuts: @tags_time_cuts)) %>
+
+
+
+<% if false %>
 <div id="tags_time_cuts">
   <table>
     <thead>
@@ -30,6 +36,7 @@
     </tbody>
   </table>
 </div>
+<% end %>
 
 <% if false %>
   <div id="tags_time_cuts">

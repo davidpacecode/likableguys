@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr>
+      <th>Age Group</th>
+      <th>Event</th>
+      <th>Course</th>
+      <th>Tags Time</th>
+      <th>Bonus Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tags_time_cuts.where("gender = ?", @gender).each do |t| %>
+      <tr>
+        <th> <%= t.age_group %> </th>
+        <th> <%= "#{t.distance.to_s} #{t.stroke.upcase}" %> </th>
+        <th> <%= t.course %> </th>
+        <th> <%= helpers.format_time_standard(t.tags_time) %></th>
+        <th> <%= helpers.format_time_standard(t.bonus_time) %></th>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+

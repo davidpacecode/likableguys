@@ -1,0 +1,17 @@
+  <wa-tab-group placement="start">
+    <wa-tab panel="boys">Boys</wa-tab>
+    <wa-tab panel="girls">Girls</wa-tab>
+
+    <wa-tab-panel name="boys">
+      <% ["10 & under", "11-12", "13-14"].each do |ag| %>
+        <%= render(TagsTimeCutTableComponent.new(gender: "boys", tags_time_cuts: @tags_time_cuts.where("age_group = ?", ag))) %>
+      <% end %>
+    </wa-tab-panel>
+
+    <wa-tab-panel name="girls">
+      <% ["10 & under", "11-12", "13-14"].each do |ag| %>
+        <%= render(TagsTimeCutTableComponent.new(gender: "girls", tags_time_cuts: @tags_time_cuts.where("age_group = ?", ag))) %>
+      <% end %>
+    </wa-tab-panel>
+  </wa-tab-group>
+

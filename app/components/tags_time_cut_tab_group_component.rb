@@ -1,6 +1,5 @@
 class TagsTimeCutTabGroupComponent < ViewComponent::Base
-  def initialize(gender:, tags_time_cuts:)
-    @gender = gender
+  def initialize(tags_time_cuts:)
     @tags_time_cuts = tags_time_cuts
   end
 end

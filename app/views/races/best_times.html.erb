@@ -1,5 +1,7 @@
 <h1>The CMC's Best Times</h1>
 
+<%= render TagsTimeComponent.new(gender: "boys", age: "13", distance: "50", stroke: "fr", course: "scy", time_type: "tags_time") %>
+
 <p>
   The CMC is currently <%= render CmcAgeComponent.new %>
 </p>
@@ -26,11 +28,16 @@
         <td><%= format_time_standard(br.final_time) %></td>
         <td><%= render MotivationalGradeComponent.new(standard_type: "single_age", race: br, age: 13, gender: "boys", course: br.course, time: br.final_time) %> </td>
         <td><%= render MotivationalGradeComponent.new(standard_type: "age_group", race: br, age: 13, gender: "boys", course: br.course, time: br.final_time) %> </td>
-        <td><%= render TagsTimeComponent.new(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "tags_time") %> </td>
+        <td><%= format_time_standard(render TagsTimeComponent.new(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "tags_time")) %> </td>
         <td><%= render TagsTimeComponent.new(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "bonus_time") %> </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-
+<% if false %>
+      <td>TAGS Time</td>
+      <td>TAGS Bonus Time</td>
+        <td><%= render TagsTimeComponent.new(gender: "boys", age: 13, distance: br.distance, stroke: br.stroke, course: br.course, time_type: "tags_time") %> </td>
+        <td><%= render TagsTimeComponent.new(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "bonus_time") %> </td>
+      <% end %>

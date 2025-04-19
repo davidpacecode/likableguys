@@ -1,5 +1,7 @@
 <div>
-  <% if @time_type == "tags_time" %>
+  <% if @tags_time_cut.nil? %>
+    No time cut found
+  <% elsif @time_type == "tags_time" %>
     <%= "#{@tags_time_cut.tags_time}" %>
   <% elsif @time_type == "bonus_time" %>
     <%= "#{@tags_time_cut.bonus_time}" %>

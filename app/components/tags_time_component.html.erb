@@ -1,0 +1,11 @@
+<div>
+  <% if @time_type == "tags_time" %>
+    <%= "#{@tags_time_cut.tags_time}" %>
+  <% elsif @time_type == "bonus_time" %>
+    <%= "#{@tags_time_cut.bonus_time}" %>
+  <% elsif @time_type == "both" %>
+    <%= "#{@tags_time_cut.tags_time} #{@tags_time_cut.bonus_time}" %>
+  <% else %>
+    <%= "Error" %>
+  <% end %>
+</div>

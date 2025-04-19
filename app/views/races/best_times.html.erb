@@ -13,6 +13,8 @@
       <td>Time</td>
       <td>Single Age</td>
       <td>Age Group</td>
+      <td>TAGS Time</td>
+      <td>TAGS Bonus Time</td>
     </tr>
   </thead>
   <tbody>
@@ -24,6 +26,8 @@
         <td><%= format_time_standard(br.final_time) %></td>
         <td><%= render MotivationalGradeComponent.new(standard_type: "single_age", race: br, age: 13, gender: "boys", course: br.course, time: br.final_time) %> </td>
         <td><%= render MotivationalGradeComponent.new(standard_type: "age_group", race: br, age: 13, gender: "boys", course: br.course, time: br.final_time) %> </td>
+        <td><%= render TagsTimeComponent.new(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "tags_time") %> </td>
+        <td><%= render TagsTimeComponent.new(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "bonus_time") %> </td>
       </tr>
     <% end %>
   </tbody>

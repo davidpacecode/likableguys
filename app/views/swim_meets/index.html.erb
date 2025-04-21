@@ -5,11 +5,23 @@
 <h1>Swim meets</h1>
 
   <div id="swim_meets">
-    <ul>
-      <% @swim_meets.each do |swim_meet| %>
-        <li> <%= link_to "#{swim_meet.start_date.to_fs(:long)} #{swim_meet.name} #{swim_meet.venue}", swim_meet %>
-    <% end %>
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <td><b>Date</b></td>
+          <td><b>Meet</b></td>
+          <td><b>Location</b></td>
+        </tr>
+      </thead>
+      <tbody>
+        <% @swim_meets.reverse_order.each do |swim_meet| %>
+          <tr>
+            <td> <%= swim_meet.start_date.to_fs(:long) %> </td>
+            <td> <%= link_to "#{swim_meet.name}", swim_meet %> </td>
+            <td> <%= "#{swim_meet.venue}" %> </td>
+        <% end %>
+      </tbody>
+    </table>
   </div>
 
 

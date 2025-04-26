@@ -36,34 +36,34 @@ age_group,gender,distance,stroke,sort_order,course,tags_time,bonus_time
 11-12,girls,400,fr_r,6,lcm,267.69,
 11-12,girls,200,mr,7,lcm,137.49,
 11-12,girls,400,mr,7,lcm,302.29,
-10&under,girls,50,fr,1,lcm,33.49,33.99
-10&under,girls,100,fr,1,lcm,73.29,74.79
-10&under,girls,200,fr,1,lcm,159.29,162.39
-10&under,girls,400,fr,1,lcm,340.59,343.89
-10&under,girls,50,bk,2,lcm,40.39,40.89
-10&under,girls,100,bk,2,lcm,85.49,86.79
-10&under,girls,50,br,3,lcm,46.09,46.59
-10&under,girls,100,br,3,lcm,99.39,101.09
-10&under,girls,50,fl,4,lcm,37.29,38.19
-10&under,girls,100,fl,4,lcm,87.09,89.49
-10&under,girls,200,im,5,lcm,180.79,184.89
-10&under,girls,200,fr_r,6,lcm,139.59,
-10&under,girls,400,fr_r,6,lcm,310.79,
-10&under,girls,200,mr,7,lcm,159.49,
-10&under,boys,50,fr,1,lcm,33.69,34.19
-10&under,boys,100,fr,1,lcm,74.59,74.99
-10&under,boys,200,fr,1,lcm,160.99,164.49
-10&under,boys,400,fr,1,lcm,341.59,347.99
-10&under,boys,50,bk,2,lcm,39.99,40.49
-10&under,boys,100,bk,2,lcm,84.99,86.59
-10&under,boys,50,br,3,lcm,46.89,47.39
-10&under,boys,100,br,3,lcm,100.49,101.49
-10&under,boys,50,fl,4,lcm,37.39,37.89
-10&under,boys,100,fl,4,lcm,86.69,89.19
-10&under,boys,200,im,5,lcm,181.89,185.79
-10&under,boys,200,fr_r,6,lcm,139.79,
-10&under,boys,400,fr_r,6,lcm,313.99,
-10&under,boys,200,mr,7,lcm,161.09,
+10 & under,girls,50,fr,1,lcm,33.49,33.99
+10 & under,girls,100,fr,1,lcm,73.29,74.79
+10 & under,girls,200,fr,1,lcm,159.29,162.39
+10 & under,girls,400,fr,1,lcm,340.59,343.89
+10 & under,girls,50,bk,2,lcm,40.39,40.89
+10 & under,girls,100,bk,2,lcm,85.49,86.79
+10 & under,girls,50,br,3,lcm,46.09,46.59
+10 & under,girls,100,br,3,lcm,99.39,101.09
+10 & under,girls,50,fl,4,lcm,37.29,38.19
+10 & under,girls,100,fl,4,lcm,87.09,89.49
+10 & under,girls,200,im,5,lcm,180.79,184.89
+10 & under,girls,200,fr_r,6,lcm,139.59,
+10 & under,girls,400,fr_r,6,lcm,310.79,
+10 & under,girls,200,mr,7,lcm,159.49,
+10 & under,boys,50,fr,1,lcm,33.69,34.19
+10 & under,boys,100,fr,1,lcm,74.59,74.99
+10 & under,boys,200,fr,1,lcm,160.99,164.49
+10 & under,boys,400,fr,1,lcm,341.59,347.99
+10 & under,boys,50,bk,2,lcm,39.99,40.49
+10 & under,boys,100,bk,2,lcm,84.99,86.59
+10 & under,boys,50,br,3,lcm,46.89,47.39
+10 & under,boys,100,br,3,lcm,100.49,101.49
+10 & under,boys,50,fl,4,lcm,37.39,37.89
+10 & under,boys,100,fl,4,lcm,86.69,89.19
+10 & under,boys,200,im,5,lcm,181.89,185.79
+10 & under,boys,200,fr_r,6,lcm,139.79,
+10 & under,boys,400,fr_r,6,lcm,313.99,
+10 & under,boys,200,mr,7,lcm,161.09,
 11-12,boys,50,fr,1,lcm,29.39,29.89
 11-12,boys,100,fr,1,lcm,64.29,65.29
 11-12,boys,200,fr,1,lcm,139.29,140.09

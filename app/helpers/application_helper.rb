@@ -31,4 +31,16 @@ module ApplicationHelper
       )
     )
   end
+
+  # Trying to get the time needed to make a TAGS time
+  def tags_diff(gender:, age:, race:, time_type:)
+    render(
+      TagsDiffComponent.new(
+        gender: gender,
+        age: age,
+        race: race,
+        time_type: time_type
+      )
+    )
+  end
 end

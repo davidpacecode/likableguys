@@ -10,6 +10,7 @@
       <td><b>Single Age</b></td>
       <td><b>Age Group</b></td>
       <td><b>TAGS Time</b></td>
+      <td><b>TAGS Diff</b></td>
       <td><b>TAGS Bonus Time</b></td>
     </tr>
   </thead>
@@ -23,6 +24,7 @@
         <td><%= render MotivationalGradeComponent.new(standard_type: "single_age", race: br, age: 13, gender: "boys", course: br.course, time: br.final_time) %> </td>
         <td><%= render MotivationalGradeComponent.new(standard_type: "age_group", race: br, age: 13, gender: "boys", course: br.course, time: br.final_time) %> </td>
         <td><%= tags_time(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "tags_time") %> </td>
+        <td><%= tags_diff(gender: "boys", age: "13", race: br, time_type: "tags_time") %> </td>
         <td><%= tags_time(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "bonus_time") %> </td>
       </tr>
     <% end %>

@@ -9,9 +9,9 @@
       <td><b>Time</b></td>
       <td><b>Single Age</b></td>
       <td><b>Age Group</b></td>
-      <td><b>TAGS Time</b></td>
-      <td><b>TAGS Diff</b></td>
-      <td><b>TAGS Bonus Time</b></td>
+<%#      <td><b>TAGS Time</b></td> %>
+      <td><b> <%= link_to "TAGS Quest", "https://www.gomotionapp.com/team/tsa/page/events/long-course-tags" %> </b></td>
+<%#      <td><b>TAGS Bonus Time</b></td> %>
     </tr>
   </thead>
   <tbody>
@@ -22,10 +22,10 @@
         <td><%= br.race_date.to_fs(:long) %></td>
         <td><%= format_time_standard(br.final_time) %></td>
         <td><%= render MotivationalGradeComponent.new(standard_type: "single_age", race: br, age: 13, gender: "boys", course: br.course, time: br.final_time) %> </td>
-        <td><%= render MotivationalGradeComponent.new(standard_type: "age_group", race: br, age: 13, gender: "boys", course: br.course, time: br.final_time) %> </td>
-        <td><%= tags_time(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "tags_time") %> </td>
+        <td><b><i><%= render MotivationalGradeComponent.new(standard_type: "age_group", race: br, age: 13, gender: "boys", course: br.course, time: br.final_time) %> </i></b></td>
+<%#        <td><%= tags_time(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "tags_time") %> </td>
         <td><%= tags_diff(gender: "boys", age: "13", race: br, time_type: "tags_time") %> </td>
-        <td><%= tags_time(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "bonus_time") %> </td>
+<%#        <td><%= tags_time(gender: "boys", age: "13", distance: br.distance, stroke: br.stroke, course: br.course, time_type: "bonus_time") %> </td>
       </tr>
     <% end %>
   </tbody>

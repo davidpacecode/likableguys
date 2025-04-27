@@ -1,3 +1,6 @@
 <% if @grade %>
   <wa-badge variant="<%= variant %>" pill <%= pulse %>><%= @grade %></wa-badge>
+  <% if @standard_type == "age_group" %>
+    <%= %w[A AA AAA AAAA].include?(@grade) ? image_tag("stags_logo.png", size: "32") : "" %>
+  <% end %>
 <% end %>

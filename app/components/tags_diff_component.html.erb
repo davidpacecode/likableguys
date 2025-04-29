@@ -1,10 +1,10 @@
 <div>
   <% if @tags_time_cut.nil? %>
-    No time cut found
+    ...no time cut found...
   <% elsif @time_type == "tags_time" %>
-    <%= @race.final_time <= @tags_time_cut.tags_time ? "TAGS time, baby!" : "#{@race.final_time - @tags_time_cut.tags_time} to go for TAGS" %>
+    <%= @race.final_time <= @tags_time_cut.tags_time ? "TAGS time, baby!" : "#{@race.final_time - @tags_time_cut.tags_time}s to go for TAGS!" %>
   <% elsif @time_type == "bonus_time" %>
-    <%= @race.final_time <= @tags_time_cut.bonus_time ? "TAGS time, baby!" : "#{@race.final_time - @tags_time_cut.bonus_time} to go for TAGS" %>
+    <%= @race.final_time <= @tags_time_cut.bonus_time ? "TAGS time, baby!" : "#{@race.final_time - @tags_time_cut.bonus_time}s to go for TAGS!" %>
   <% else %>
     <%= "Error" %>
   <% end %>

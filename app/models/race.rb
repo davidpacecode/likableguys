@@ -7,4 +7,8 @@ class Race < ApplicationRecord
   validates :heat, numericality: { only_integer: true, greater_than: 0 }, allow_nil: true
   validates :lane, numericality: { only_integer: true, greater_than: 0 }, allow_nil: true
   validates :dq, inclusion: { in: [ true, false ] }
+
+  def event
+    "#{stroke} #{distance}"
+  end
 end

@@ -64,6 +64,12 @@ class RacesController < ApplicationController
       .having("min(final_time)")
   end
 
+  def trends
+    @distinct_races = Race.joins(:swim_meet)
+      .select("swim_meets.course", "races.distance", "races.stroke").distinct.order("swim_meets.course")
+    @races = Race.all
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_race

@@ -1,0 +1,7 @@
+<h1>The CMC's Races over Time</h1>
+
+<% @distinct_races.each do |dr| %>
+  <%= "#{dr.distance} #{dr.stroke.upcase} #{dr.course.upcase}" %>
+  <%= tag.br %>
+<% end %>
+

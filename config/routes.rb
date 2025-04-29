@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :races do
     collection do
       get :best_times
+      get :trends
     end
   end
   resources :swim_meets

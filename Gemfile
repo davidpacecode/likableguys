@@ -68,3 +68,5 @@ end
 gem "sitepress-rails", "~> 4.0"
 
 gem "markdown-rails", "~> 2.1"
+
+gem "chartkick"

@@ -1,6 +1,6 @@
 <div>
   <% if @tags_time_cut.nil? %>
-    No time cut found
+    ...no time cut found...
   <% elsif @time_type == "tags_time" %>
     <%= "#{helpers.format_time_standard(@tags_time_cut.tags_time)}" %>
   <% elsif @time_type == "bonus_time" %>

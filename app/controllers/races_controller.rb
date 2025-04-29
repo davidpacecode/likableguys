@@ -67,7 +67,8 @@ class RacesController < ApplicationController
   def trends
     @distinct_races = Race.joins(:swim_meet)
       .select("swim_meets.course", "races.distance", "races.stroke").distinct.order("swim_meets.course")
-    @races = Race.all
+    @races = Race.joins(:swim_meet)
+      .select("races.*", "swim_meets.course")
   end
 
   private

@@ -1,7 +1,11 @@
 <h1>The CMC's Races over Time</h1>
 
 <% @distinct_races.each do |dr| %>
-  <%= "#{dr.distance} #{dr.stroke.upcase} #{dr.course.upcase}" %>
+  <b> <%= "#{dr.distance} #{dr.stroke.upcase} #{dr.course.upcase}" %> </b>
+  <%= tag.br %>
+  <%= line_chart @races.where(distance: dr.distance, stroke: dr.stroke)
+    .where("swim_meets.course = ?", dr.course)
+    .pluck(:race_date, :final_time) %>
   <%= tag.br %>
 <% end %>
 

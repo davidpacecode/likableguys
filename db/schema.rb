@@ -75,6 +75,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_16_042507) do
     t.string "course"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_swim_meets_on_user_id"
   end
 
   create_table "tags_time_cuts", force: :cascade do |t|
@@ -112,4 +114,5 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_16_042507) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "races", "swim_meets"
+  add_foreign_key "swim_meets", "users"
 end

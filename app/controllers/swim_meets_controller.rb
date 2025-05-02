@@ -1,4 +1,5 @@
 class SwimMeetsController < ApplicationController
+  allow_unauthenticated_access only: %i[ index show ]
   before_action :set_swim_meet, only: %i[ show edit update destroy ]
 
   # GET /swim_meets or /swim_meets.json

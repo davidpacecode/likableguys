@@ -24,7 +24,7 @@
             <td><%= format_time_standard(race.final_time) %>
               <%= render MotivationalGradeComponent.new(standard_type: "single_age", race: race, age: 13, gender: "boys", course: @swim_meet.course, time: race.final_time) %>
               <%= render MotivationalGradeComponent.new(standard_type: "age_group", race: race, age: 13, gender: "boys", course: @swim_meet.course, time: race.final_time) %> </td>
-            <td><%= link_to "Edit", edit_race_path(race) %></td>
+            <td><%= link_to "Edit", edit_race_path(race) if authenticated? %></td>
           </tr>
         <% end %>
       </tbody>
@@ -36,12 +36,12 @@
 <p></p>
 
 <div>
-  <%= link_to "Edit this swim meet", edit_swim_meet_path(@swim_meet) %> |
+  <%= link_to "Edit this swim meet", edit_swim_meet_path(@swim_meet) if authenticated? %>
   <%= link_to "Back to swim meets", swim_meets_path %>
 
   <% 5.times do %>
     <%= tag.br %>
   <% end %>
 
-  <%= button_to "Destroy this swim meet", @swim_meet, method: :delete %>
+  <%= button_to "Destroy this swim meet", @swim_meet, method: :delete if authenticated? %>
 </div>

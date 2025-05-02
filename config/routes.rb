@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resource :session
+  resources :passwords, param: :token
   sitepress_pages
   sitepress_root
   resources :tags_time_cuts

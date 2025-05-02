@@ -40,6 +40,8 @@
           <a href="/time_standards">Motivational times browser</a>
           <a href="/tags_time_cuts">TAGS time cuts</a>
           <a href="/about">About</a>
+          <%= link_to "Login", new_session_path unless authenticated? %>
+          <%= button_to "Log out", session_path, method: :delete if authenticated? %>
         </div>
       </header>
 

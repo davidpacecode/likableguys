@@ -1,4 +1,5 @@
 class RacesController < ApplicationController
+  allow_unauthenticated_access only: %i[ best_times trends ]
   before_action :set_race, only: %i[ show edit update destroy ]
 
   # GET /races or /races.json

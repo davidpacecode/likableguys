@@ -1,4 +1,5 @@
 class TimeStandardsController < ApplicationController
+  allow_unauthenticated_access only: %i[ index show ]
   before_action :set_time_standard, only: %i[ show edit update destroy ]
 
   # GET /time_standards or /time_standards.json

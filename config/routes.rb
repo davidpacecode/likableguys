@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   resource :session
   resources :passwords, param: :token
-  sitepress_pages
-  sitepress_root
   resources :tags_time_cuts
   resources :races do
     collection do
@@ -12,6 +10,11 @@ Rails.application.routes.draw do
   end
   resources :swim_meets
   resources :time_standards
+  # sitepress_pages
+  # sitepress_root
+  # Route Sitepress pages through your custom controller
+  get "*path", to: "site#show", constraints: { path: /.*/ }, as: :site_page
+  root to: "site#show" # If your root path should be handled by Sitepress
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

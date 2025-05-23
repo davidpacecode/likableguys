@@ -30,4 +30,25 @@ production:
   primary:
     <<: *default
     url: <%= ENV['DATABASE_URL'] %>
-
+    #
+# Add this section for SolidCable
+cable:
+  development:
+    <<: *default
+    database: likableguys_development
+    username: postgres
+    password: postgres
+    host: localhost
+    port: 5432
+  
+  test:
+    <<: *default
+    database: likableguys_test
+    username: postgres
+    password: postgres
+    host: localhost
+    port: 5432
+  
+  production:
+    <<: *default
+    url: <%= ENV['DATABASE_URL'] %>

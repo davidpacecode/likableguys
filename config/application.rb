@@ -17,7 +17,7 @@ module Likableguys
     config.autoload_lib(ignore: %w[assets tasks])
 
     # Claude said to add this since i don't need action_cable
-    action_cableconfig.action_cable.mount_path = nil
+    action_cable.config.action_cable.mount_path = nil
 
     # Configuration for the application, engines, and railties goes here.
     #

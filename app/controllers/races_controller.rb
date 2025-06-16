@@ -62,7 +62,7 @@ class RacesController < ApplicationController
     @best_races = Race.joins(:swim_meet)
       .select("DISTINCT ON (swim_meets.course, races.distance, races.stroke) swim_meets.course, races.distance, races.stroke, races.final_time, races.race_date")
       .order("swim_meets.course, races.distance, races.stroke, races.final_time ASC")
-   end
+  end
 
   def trends
     @distinct_races = Race.joins(:swim_meet)
